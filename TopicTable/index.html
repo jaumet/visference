@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Web Project</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="./js/jquery.tablesorter.js"></script>
+        <script>
+	        var isInteger = function(a) {
+			    return ((typeof a !== 'number') || (a % 1 !== 0)) ? false : true;
+			};
+	        thead = "<thead><tr><th>ID</th><th>title</th><th>Topic 1</th><th>Topic 2</th><th>Topic 3</th><th>Topic 4</th><th>Topic 5</th></tr></thead>"; 
+        	$.getJSON("data/my.json", function(data){
+				var items = [thead];
+				var it = ''; var circle;
+				$.each(data, function(key1, val1) {
+					$.each(val1, function(key, val) {
+						if (isInteger(val) && key!="id") 
+						{
+							circle = '<span class="circle" style="color:transparent;height:'+(val/4)+'px;width:'+(val/4)+'px;">'+val+'</span>';
+						} else {
+							circle = val;
+						}
+					  	it = it +'<td id="' + key + '">' + circle + '</td>';
+					});
+					items.push('<tr id="' + key1 + '">' + it + '</tr>');
+					it = '';
+				});		 
+				$('<table/>', {
+				    'class': 'tablesorter',
+				    'id': 'myTable',
+				    html: items.join('')
+				}).appendTo('#list');
+				$("#myTable").tablesorter();
+			});
+        </script>
+        <style>
+        	table, tr, td, th {border:1px solid red;}
+			th { 
+			    background-image: url('images/bg.gif');     
+			    cursor: pointer; 
+			    font-weight: bold; 
+			    background-repeat: no-repeat; 
+			    background-position: center left; 
+			    padding-left: 20px; 
+			    border-right: 1px solid #dad9c7; 
+			    margin-left: -1px; 
+			}
+			.circle {
+			  background-color:orange;
+			  background-position:initial initial;
+			  background-repeat:initial initial;
+			  border-bottom-left-radius:50%;
+			  border-bottom-right-radius:50%;
+			  border-top-left-radius:50%;
+			  border-top-right-radius:50%;
+			  display:inline-block;
+			  margin:20px;
+			  color:black;
+			}
+			td {
+			  font-size:9px;
+			  max-width:80px;
+			}
+        </style>
+    </head>
+    <body>
+        <h1>New Web Project Page</h1>
+        <div id="list">
+        </div>
+    </body>
+</html>
