@@ -4,7 +4,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>New Web Project</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="./js/jquery.tablesorter.js"></script>
         <script>
 	        var isInteger = function(a) {
 			    return ((typeof a !== 'number') || (a % 1 !== 0)) ? false : true;
@@ -39,18 +38,21 @@
 			// Getting axis list from JSON //
 			$.getJSON("data/filters.json", function(data){
 				var items = [];
-				var myli = ''; var myval = '';
+				var myaxis = ''; var myval = '';
 				$.each(data, function(key1, val1) {
 					$.each(val1, function(key, val) {
 						if (key == "axisname") 
 						{
-							myli = key;
-							myval = val;
+							myaxis = key + ' -> ' + val;
 						} else {
-							myli = key;//myli + ' ' + val;
+							$.each(val, function(key2, val2) {
+								$.each(val2, function(key3, val3) {
+									myval = myval + val3;//myli + ' ' + val;
+								});
+							});
 						}
 					});
-					items.push('<li>' + myli + ' | ' + myval + '</li>');
+					items.push('<li>' + myaxis + ' | ' + myval + '</li>');
 				});
 				$('<div/>', {
 				    'class': 'filters_list',
