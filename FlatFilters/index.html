@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Web Project</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="./js/jquery.tablesorter.js"></script>
+        <script>
+	        var isInteger = function(a) {
+			    return ((typeof a !== 'number') || (a % 1 !== 0)) ? false : true;
+			};
+			
+			///////////////////////////////////
+	        // Getting papers list from JSON //	 
+        	$.getJSON("data/my.json", function(data){
+				var items = [];
+				var myli = ''; var myval;
+				$.each(data, function(key1, val1) {
+					$.each(val1, function(key, val) {
+						if (key =="title") 
+						{
+							myli = '<li id="' + key +'" class="';
+							myval = val;
+						} else {
+							myli = myli + ' ' + val;
+						}
+					});
+					items.push(myli +'">' + myval + '</li>');
+					it = '';
+				});		 
+				$('<ul/>', {
+				    'class': 'papers_list',
+				    'id': 'myList',
+				    html: items.join('')
+				}).appendTo('#papers');
+			});
+			
+			/////////////////////////////////
+			// Getting axis list from JSON //
+			$.getJSON("data/filters.json", function(data){
+				var items = [];
+				var myli = ''; var myval = '';
+				$.each(data, function(key1, val1) {
+					$.each(val1, function(key, val) {
+						if (key == "axisname") 
+						{
+							myli = key;
+							myval = val;
+						} else {
+							myli = key;//myli + ' ' + val;
+						}
+					});
+					items.push('<li>' + myli + ' | ' + myval + '</li>');
+				});
+				$('<div/>', {
+				    'class': 'filters_list',
+				    'id': 'myFilter',
+				    html: items.join('')
+				}).appendTo('#filters');
+			});
+			
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1>Flat List Filters</h1>
+        <div id="filters">
+        </div>
+        <hr />
+        <div id="papers">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+[
+	{
+		"id": "0",
+        "title": "1) Thurstonian B oltzmann Machines: Learning from Multiple Inequalities",
+        "axis1": 11,
+        "axis2": 23,	
+        "axis3": 32,
+        "axis4": 43,
+        "axis5": 52
+	},
+	{
+		"id": "1",
+        "title": "2) An Adaptive Learning Rate for Stochastic Variational Inference",
+        "axis1": 12,
+        "axis2": 23,	
+        "axis3": 32,
+        "axis4": 43,
+        "axis5": 51
+	},
+	{
+		"id": "2",
+        "title": "3) Scalable Optimization of Neighbor Embedding for Visualization",
+        "axis1": 12,
+        "axis2": 22,	
+        "axis3": 31,
+        "axis4": 43,
+        "axis5": 55
+	},
+	{
+		"id": "2",
+        "title": "4) bla bla bla",
+        "axis1": 11,
+        "axis2": 21,	
+        "axis3": 31,
+        "axis4": 43,
+        "axis5": 54
+	},
+	{
+		"id": "2",
+        "title": "5) ta ta ta ta",
+        "axis1": 11,
+        "axis2": 23,	
+        "axis3": 31,
+        "axis4": 43,
+        "axis5": 53
+	},
+	{
+		"id": "2",
+        "title": "6) pli pli pli pli",
+        "axis1": 11,
+        "axis2": 22,	
+        "axis3": 31,
+        "axis4": 43,
+        "axis5": 52
+	},
+	{
+		"id": "2",
+        "title": "7) traca traca traca traca",
+        "axis1": 11,
+        "axis2": 21,	
+        "axis3": 31,
+        "axis4": 43,
+        "axis5": 51
+	}
+]
