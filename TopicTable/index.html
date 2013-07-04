@@ -4,12 +4,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>New Web Project</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="./js/jquery.tablesorter.js"></script>
+        <script src="js/jquery.tablesorter.js"></script>
+        <style type="text/css" src="js/jquery.tablesorter/themes/blue/style.css"></style>
         <script>
 	        var isInteger = function(a) {
 			    return ((typeof a !== 'number') || (a % 1 !== 0)) ? false : true;
 			};
-	        thead = "<thead><tr><th>ID</th><th>title</th><th>Topic 1</th><th>Topic 2</th><th>Topic 3</th><th>Topic 4</th><th>Topic 5</th></tr></thead>"; 
+	        thead = '<thead class="header"><tr><th>ID</th><th>title</th><th>Topic 1</th><th>Topic 2</th><th>Topic 3</th><th>Topic 4</th><th>Topic 5</th></tr></thead>'; 
         	$.getJSON("data/my.json", function(data){
 				var items = [thead];
 				var it = ''; var circle;
@@ -31,21 +32,31 @@
 				    'id': 'myTable',
 				    html: items.join('')
 				}).appendTo('#list');
-				$("#myTable").tablesorter();
+				$("#myTable").tablesorter({ 
+					sortList: [[0,0]] 
+	  		        }); 
 			});
         </script>
         <style>
-        	table, tr, td, th {border:1px solid red;}
+        	
+        		table, tr, td, th {border:0px solid red;}
+        		
+        		table {
+        			background-color:#EAD3E5;
+        		}
+        		
 			th { 
 			    background-image: url('images/bg.gif');     
 			    cursor: pointer; 
 			    font-weight: bold; 
 			    background-repeat: no-repeat; 
 			    background-position: center left; 
+			    background-color:#FAACEA;
 			    padding-left: 20px; 
 			    border-right: 1px solid #dad9c7; 
 			    margin-left: -1px; 
 			}
+		
 			.circle {
 			  background-color:orange;
 			  background-position:initial initial;
