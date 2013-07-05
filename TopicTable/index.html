@@ -2,15 +2,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>New Web Project</title>
+        <title>TopicTable</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="js/jquery.tablesorter.js"></script>
-        <style type="text/css" src="js/jquery.tablesorter/themes/blue/style.css"></style>
         <script>
 	        var isInteger = function(a) {
 			    return ((typeof a !== 'number') || (a % 1 !== 0)) ? false : true;
 			};
-	        thead = '<thead class="header"><tr><th>ID</th><th>title</th><th>Topic 1</th><th>Topic 2</th><th>Topic 3</th><th>Topic 4</th><th>Topic 5</th></tr></thead>'; 
+	        thead = '<thead class="header"><tr><th>ID</th><th>title</th><th>Topic 1</th><th>Topic 2</th><th>Topic 3</th><th>Topic 4</th><th>Topic 5</th><th>Topic 6</th></tr></thead>'; 
         	$.getJSON("data/my.json", function(data){
 				var items = [thead];
 				var it = ''; var circle;
@@ -39,10 +38,19 @@
         </script>
         <style>
         	
-        		table, tr, td, th {border:0px solid red;}
+        		td {
+        			border-left:1px solid grey; 
+        		}
+        		
+        		th {
+        			border:0px solid grey; 
+        			padding:3px;
+        		}
         		
         		table {
         			background-color:#EAD3E5;
+        			border-spacing:0;
+				border-collapse:collapse;
         		}
         		
 			th { 
@@ -53,7 +61,7 @@
 			    background-position: center left; 
 			    background-color:#FAACEA;
 			    padding-left: 20px; 
-			    border-right: 1px solid #dad9c7; 
+			    border-right: 1px solid grey; 
 			    margin-left: -1px; 
 			}
 		
@@ -66,17 +74,64 @@
 			  border-top-left-radius:50%;
 			  border-top-right-radius:50%;
 			  display:inline-block;
-			  margin:20px;
+			  margin-left:30%;
+			  margin-top:2px;
+			  margin-bottom:2px;
 			  color:black;
 			}
 			td {
-			  font-size:9px;
-			  max-width:80px;
+			  font-size:12px;
+			  padding-left:3px;
+			  /*max-width:80px;*/
+			}
+			tr:hover {
+			  background-color:#D3EADB;
+			}
+			/************************/
+			/* tables */
+			table.tablesorter {
+				font-family:arial;
+				background-color: #CDCDCD;
+				margin:10px 0pt 15px;
+				font-size: 8pt;
+				width: 100%;
+				text-align: left;
+			}
+			table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+				background-color: #e6EEEE;
+				border: 1px solid #FFF;
+				font-size: 8pt;
+				padding: 4px;
+			}
+			table.tablesorter thead tr .header {
+				background-image: url(images/bg.gif);
+				background-repeat: no-repeat;
+				background-position: center right;
+				cursor: pointer;
+			}
+			table.tablesorter tbody td {
+				color: #3D3D3D;
+				padding: 4px;
+				background-color: #FFF;
+				vertical-align: top;
+			}
+			table.tablesorter tbody tr.odd td {
+				background-color:#F0F0F6;
+			}
+			table.tablesorter thead tr .headerSortUp {
+				background-image: url(images/asc.gif);
+			}
+			table.tablesorter thead tr .headerSortDown {
+				background-image: url(images/desc.gif);
+			}
+			table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+			background-color: #8dbdd8;
 			}
         </style>
+        <style type="text/css" src="css/style.css"></style>
     </head>
     <body>
-        <h1>New Web Project Page</h1>
+        <h1>TopicTable</h1>
         <div id="list">
         </div>
     </body>

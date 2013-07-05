@@ -54,15 +54,15 @@
 								if (key3 == "code") {
 									// Counting papers for this axes value:
 									var c = $("#papers \."+val3).length;
-									myname = '<button class="'+val3+' ">['+c+'] ';
+									myname = '<span class="axesname" style="padding-top:'+(c+15)+'px;"><button class="'+val3+' " style="font-size:'+c+5+'px;">'+c+'</button>';
 								} else {
-									myval = myval +myname + val3 + '</button>';
+									myval =  myval  + myname +val3 + '  </span> ' + ' | ';
 								}
 							});
 						});
 					}
 				});
-				items.push('<li>' + myaxis + ' -> ' + myval + '</li>');
+				items.push('<li class="axis">' + myaxis + ' -> ' + myval + '</li>');
 			});
 			$('<div/>', {
 			    'class': 'btn-group',
@@ -75,29 +75,35 @@
 			$('button').click(function(){
 				var myclass = this.className;//.substring(4);
 				//alert("class: "+myclass);
-				$('#papers li').hide();
-				$('.'+myclass).show();
+			    // Appending filters:
+				$('#papers li').filter(':visible').not('li.'+myclass).hide(); 
+			    // Not appending filters. Applying filters independently
+				//$('#papers li').hide();
+				//$('#papers li.'+myclass).filter(':visible').toggle("slow");
+			    // Recount total visible items
+				$("#counter").html("Papers listed: "+$("#papers li").filter(':visible').length);
 			});
 			$('#showall').click(function(){
 				$('#papers li').show();
 			});
 			
 		});
-
-		//////////////
-		// Counter //
-		function count() {
-			var c = $("#papers li").length;
-			$("#counter").append("count: "+c);
-			return;
-		}
-		
 		$(document).ready(function() {
 			
-		})
+		});
         </script>
         <style>
-
+        	body {
+        		font-size:23px;
+        	}
+        	.axis {
+        		
+        	}
+		.axesname {
+			border:2px solid red;
+			padding:3px;
+			border-radius:20%;
+		}
         </style>
     </head>
     <body>

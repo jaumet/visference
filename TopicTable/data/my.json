@@ -6,7 +6,8 @@
         "topic2": 0,	
         "topic3": 0,
         "topic4": 70,
-        "topic5": 70
+        "topic5": 30,
+        "topic6": 70
 	},
 	{
 	"id": "1",
@@ -15,7 +16,8 @@
         "topic2": 20,	
         "topic3": 20,
         "topic4": 100,
-        "topic5": 100
+        "topic5": 30,
+        "topic6": 100
 	},
 	{
 	"id": "2",
@@ -24,7 +26,8 @@
         "topic2": 90,	
         "topic3": 0,
         "topic4": 10,
-        "topic5": 100
+        "topic5": 30,
+        "topic6": 100
 	},
 	{
 	"id": "3",
@@ -33,7 +36,8 @@
         "topic2": 90,	
         "topic3": 90,
         "topic4": 100,
-        "topic5": 0
+        "topic5": 30,
+        "topic6": 0
 	},
 	{
 	"id": "4",
@@ -42,7 +46,8 @@
         "topic2": 70,	
         "topic3": 30,
         "topic4": 70,
-        "topic5": 50
+        "topic5": 30,
+        "topic6": 50
 	},
 	{
 	"id": "5",
@@ -51,7 +56,8 @@
         "topic2": 0,	
         "topic3": 20,
         "topic4": 10,
-        "topic5": 100
+        "topic5": 30,
+        "topic6": 100
 	},
 	{
 	"id": "6",
@@ -60,6 +66,7 @@
         "topic2": 30,	
         "topic3": 100,
         "topic4": 50,
-        "topic5": 10
+        "topic5": 30,
+        "topic6": 10
 	}
 ]
