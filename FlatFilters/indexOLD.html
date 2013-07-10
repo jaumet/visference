@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Web Project</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!--<script src="../js/bootstrap.js"></script>
+	<style type="text/css" src="../css/bootstrap.css"></style>-->
+        <script>
+		///////////////////////////////////
+       		// Getting papers list from JSON //	 
+		$.getJSON("data/my.json", function(data){
+			var items = [];
+			var myli = ''; var myval; var onlyclass = '';
+			$.each(data, function(key1, val1) {
+				$.each(val1, function(key, val) {
+					if (key !="id") {
+						if (key =="title") 
+						{
+							myli = '<li id="' + key +'" class="';
+							myval = val;
+						} else {
+							myli = myli + ' ' + val;
+							onlyclass = onlyclass + val + ', ';
+						}
+					}
+				});
+				items.push(myli +'">' + onlyclass + ' | ' + myval + '</li>');
+				it = ''; onlyclass = '';
+			});		 
+			$('<ul/>', {
+			    'class': 'papers_list',
+			    'id': 'myList',
+			    html: items.join('')
+			}).appendTo('#papers');
+			// Counting papers
+			$("#counter").append("Papers listed: "+$("#papers li").length);
+		});
+
+		/////////////////////////////////
+		// Getting axis list from JSON //
+		
+		$.getJSON("data/filters.json", function(data){
+			var items = [];
+			$.each(data, function(key1, val1) {
+				var myaxis = ''; var myval = '';var myname = '';
+				$.each(val1, function(key, val) {
+					if (key == "axisname") 
+					{
+						myaxis = val;
+					} else {
+						$.each(val, function(key2, val2) {
+							$.each(val2, function(key3, val3) {
+								if (key3 == "code") {
+									// Counting papers for this axes value:
+									var c = $("#papers \."+val3).length;
+									myname = '<span class="axesname" style="padding-top:'+(c+8)+'px;"><button class="'+val3+' " style="font-size:'+c+5+'px;">'+c+'</button>';
+								} else {
+									myval =  myval  + myname +val3 + '  </span>&nbsp;&nbsp;&nbsp;';
+								}
+							});
+						});
+					}
+				});
+				items.push('<li class="axis">' + myaxis + ' -> ' + myval + '</li>');
+			});
+			$('<div/>', {
+			    'class': 'btn-group',
+			    'id': 'myFilter',
+			    html: items.join('')
+			}).appendTo('#filters');
+			
+			////////////
+			// Filter //				
+			$('button').click(function(){
+				var myclass = this.className;//.substring(4);
+				$(this).css('backgroundColor','#FFAAA2');
+				//alert("class: "+myclass);
+			    // Appending filters:
+				$('#papers li').filter(':visible').not('li.'+myclass).hide(); 
+			    // Not appending filters. Applying filters independently
+				//$('#papers li').hide();
+				//$('#papers li.'+myclass).filter(':visible').toggle("slow");
+			    // Recount total visible items
+				$("#counter").html("Papers listed: "+$("#papers li").filter(':visible').length);
+			});
+			$('#showall').click(function(){
+				$('#papers li').show();
+				$('button').css('backgroundColor','#ABA2FF');
+			});
+			
+		});
+		$(document).ready(function() {
+			
+		});
+        </script>
+        <style>
+        	body {
+        		font-size:23px;
+        	}
+        	button {
+        		border-radius:40%;
+        		background-color:#ABA2FF;
+        	}
+		.axesname {
+			border:2px solid grey;
+			padding:3px;
+			border-radius:20%;
+		}
+        </style>
+    </head>
+    <body>
+        <h1>Flat List Filters</h1>
+        <div id="filters" class="lala">
+        </div>
+		<input type="button" id="showall" class="btn" value="show all" />
+        <div id="counter">
+        </div>
+        <hr />
+        <div id="papers">
+        </div>
+    </body>
+</html>
