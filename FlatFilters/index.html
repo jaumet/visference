@@ -4,8 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>New Web Project</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <!--<script src="../js/bootstrap.js"></script>
-	<style type="text/css" src="../css/bootstrap.css"></style>-->
+        <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <script>
 		///////////////////////////////////
        		// Getting papers list from JSON //	 
@@ -47,25 +47,28 @@
 				$.each(val1, function(key, val) {
 					if (key == "axisname") 
 					{
-						myaxis = val;
+						myaxis = '<button class="btn btn-inverse" style="border-right:10px solid white;">'+val+' --> </button>&nbsp;&nbsp;--';
 					} else {
 						$.each(val, function(key2, val2) {
 							$.each(val2, function(key3, val3) {
 								if (key3 == "code") {
 									// Counting papers for this axes value:
 									var c = $("#papers \."+val3).length;
-									myname = '<span class="axesname" style="padding-top:'+(c+15)+'px;"><button class="'+val3+' " style="font-size:'+c+5+'px;">'+c+'</button>';
+									if (c > 0) {
+										myname = '<button class="btn '+val3+'" style="width:'+c*100+'px;">('+c;
+									}
 								} else {
-									myval =  myval  + myname +val3 + '  </span> ' + ' | ';
+									myval =  myval  +  myname +') '+ val3 + '</button> ' + ' | ';
 								}
 							});
 						});
 					}
 				});
-				items.push('<li class="axis">' + myaxis + ' -> ' + myval + '</li>');
+				items.push('<p><div class="btn-group">' + myaxis + ' -> ' + myval + '</div></p>');
 			});
+			//items.push('</ul>');
 			$('<div/>', {
-			    'class': 'btn-group',
+			    'class': 'my',
 			    'id': 'myFilter',
 			    html: items.join('')
 			}).appendTo('#filters');
@@ -73,7 +76,7 @@
 			////////////
 			// Filter //				
 			$('button').click(function(){
-				var myclass = this.className;//.substring(4);
+				var myclass = this.className.substring(4);
 				//alert("class: "+myclass);
 			    // Appending filters:
 				$('#papers li').filter(':visible').not('li.'+myclass).hide(); 
@@ -93,17 +96,7 @@
 		});
         </script>
         <style>
-        	body {
-        		font-size:23px;
-        	}
-        	.axis {
-        		
-        	}
-		.axesname {
-			border:2px solid red;
-			padding:3px;
-			border-radius:20%;
-		}
+        
         </style>
     </head>
     <body>

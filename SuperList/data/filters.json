@@ -1,0 +1,92 @@
+[
+	{
+		"axisname": "axis 1",
+		"values" : 
+			[
+				{
+					"code": "11",
+			    	"name": "one-one"
+		   		},
+				{
+					"code": "12",
+			    	"name": "one-two"
+		   		}
+	   		]
+	},
+	{
+		"axisname": "axis 2",
+		"values" : 
+			[
+				{
+					"code": "21",
+			    	"name": "two-one"
+		   		},
+				{
+					"code": "22",
+			    	"name": "two-two"
+		   		},
+				{
+					"code": "23",
+			    	"name": "two-three"
+		   		}
+	   		]
+	},
+	{
+		"axisname": "axis 3",
+		"values" : 
+			[
+				{
+					"code": "31",
+			    	"name": "three-one"
+		   		},
+				{
+					"code": "32",
+			    	"name": "three-two"
+		   		}
+	   		]
+	},
+	{
+		"axisname": "axis 4",
+		"values" : 
+			[
+				{
+					"code": "41",
+			    	"name": "four-one"
+		   		},
+				{
+					"code": "42",
+			    	"name": "four-two"
+		   		},
+				{
+					"code": "43",
+			    	"name": "four-three"
+		   		}
+	   		]
+	},
+	{
+		"axisname": "axis 5",
+		"values" : 
+			[
+				{
+					"code": "51",
+			    	"name": "five-one"
+		   		},
+				{
+					"code": "52",
+			    	"name": "five-two"
+		   		},
+				{
+					"code": "53",
+			    	"name": "five-three"
+		   		},
+				{
+					"code": "54",
+			    	"name": "five-four"
+		   		},
+				{
+					"code": "55",
+			    	"name": "five-five"
+		   		}
+	   		]
+	}
+]
