@@ -33,7 +33,7 @@
 						}
 					  	if (key.substring(0,4) !== "axis") {
 					  		it = it +'<td>' + circle + '</td>';
-					  		nclass = ''; //circle='';
+					  		nclass = ''; 
 				  		}
 				  	});
 					items.push('<tr class="' + nclass + '">' + it + '</tr>');
@@ -48,6 +48,7 @@
 					sortList: [[0,0]]
 	  		        });
 				count();
+				$("#myTable tr td:nth-child(2)").addClass("tatbletitle");
 			});
 			
 
@@ -157,22 +158,28 @@
 		td {
 		  text-align:center;
 		}
-		.btn {
-			border-left:3px solid black;
+		.tatbletitle {
+		   text-align:left;
+		}
+		.btn-group .btn {
+			border-left:3px solid grey;
 		}
 		.hero-unit {
 			padding-top:10px;
+			/*height:310px;*/
 		}
 		.container:after {
 			clear:none;
 		}
 		#filters, #myp {
 			width:70%;
+			/*position:relative;
+			float:left;*/
 		}
 		#right {
 			position:relative;
 			float:right;
-			top:-110px;
+			/*top:-110px;*/
 			width:100px;
 			font-size:14px;
 		}
@@ -219,12 +226,7 @@
 	<div class="container">
 		<!-- Main hero unit for a primary marketing message or call to action -->
 		<p><a href="#" id="showhidefilters" class="btn btn-primary">show/hide filters</a>	</p>
-		<div class="hero-unit">
-			<h2>JRML 2013</h2>
-			<p id="myp"><a href="#" id="showall" class="btn btn-primary"/>show all</a></p>
-			<div id="filters">
-			</div>
-		
+		<div class="hero-unit" style="position:relative;float:top;">
 			<div id="right">
 				<p> Showing</p>
 				<div id="countercontainer">
@@ -234,8 +236,15 @@
 				</div>
 				<p>papers</p>
 			</div>
+			<div style="position:relative;">
+				<h2>JRML 2013</h2>
+				<p id="myp"><a href="#" id="showall" class="btn btn-primary"/>show all</a></p>
+			</div>
+			<div id="filters">
+			</div>
 		</div>
 	</div>
+	<div style="clear:both;"></div>
 	<!--Post bootstrap-->
 	<h3>TopicTable</h3>
 	<div id="list">
