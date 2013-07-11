@@ -62,7 +62,7 @@
 				$.each(val1, function(key, val) {
 					if (key == "axisname") 
 					{
-						myaxis = '<button class="btn btn-inverse" style="border-right:0px solid white;">'+val+' --> </button>&nbsp;&nbsp;--';
+						myaxis = '<span class="btn btn-inverse" style="cursor:default;border-right:0px solid white;">'+val+' --> </span>';
 					} else {
 						$.each(val, function(key2, val2) {
 							$.each(val2, function(key3, val3) {
@@ -93,7 +93,7 @@
 			////////////
 			// Filter //				
 			$('button').click(function(){
-				$("\."+this.className).addClass('btn-primary');
+				//$(this).addClass('btn-inverse');
 				var myclass = this.className.substring(4);
 			    //1) Appending filters:
 				$('#myTable tr').filter(':visible').not('tr.'+myclass).hide("slow"); 
