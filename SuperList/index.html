@@ -101,12 +101,15 @@
 				//$('#myTable tr').hide();
 				//$('#myTable tr.'+myclass).filter(':visible').toggle("slow");
 			    // Recount total visible items
-				var vis = $("#myTable tr").filter(':visible').length -1;
-				$("#counter").html(vis);
+				$('tr#header').promise().done(function(){
+					count();
+				});
 			});
 			$('#showall').click(function(){
 				$('#myTable tr').show("slow");
-				count();
+				$('#myTable tr').promise().done(function(){
+					count();
+				});
 			});
 		});
 		$(document).ready(function() {
@@ -169,7 +172,7 @@
 		#right {
 			position:relative;
 			float:right;
-			top:-150px;
+			top:-110px;
 			width:100px;
 			font-size:14px;
 		}
