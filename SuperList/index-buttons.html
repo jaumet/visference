@@ -62,7 +62,7 @@
 				$.each(val1, function(key, val) {
 					if (key == "axisname") 
 					{
-						myaxis = '<span class="btn btn-inverse" style="cursor:default;border-right:0px solid white;float:left;">'+val+'</span><div style="clear:both;"></div>';
+						myaxis = '<span class="btn btn-inverse" style="cursor:default;border-right:0px solid white;">'+val+' --> </span>';
 					} else {
 						$.each(val, function(key2, val2) {
 							$.each(val2, function(key3, val3) {
@@ -71,19 +71,17 @@
 									var c = $("#myTable tr\."+val3).length;
 									//alert(key3+" | "+val3+" | "+c);
 									if (c > 0) {
-										myname = '<span class="checkbox" style="width:'+c*80+'px;"><input type="checkbox" class="'+val3+'" />('+c;
+										myname = '<button class="btn '+val3+'" style="width:'+c*100+'px;">('+c;
 									}
 								} else {
-									if (myname.length>1) {
-										myval =  myval  +  myname +') '+ val3 +'</span>';
-										myname = '';
-								}
+									myval =  myval  +  myname +') '+ val3 + '</button> ';
+									myname = '';
 								}
 							});
 						});
 					}
 				});
-				items.push('<p>' + myaxis + '&nbsp;' + myval + '</p>');
+				items.push('<p><div class="btn-group">' + myaxis + ' -> ' + myval + '</div></p>');
 			});
 			//items.push('</ul>');
 			$('<div/>', {
@@ -94,14 +92,9 @@
 
 			////////////
 			// Filter //				
-			$('input').click(function(){
+			$('button').click(function(){
 				//$(this).addClass('btn-inverse');
-				var myclass = this.className;//.substring(4);
-				if ($(this).is(':checked')) {
-					alert ("IS CHECKED!");
-				} else {
-					alert ("IS NOOOT CHECKED!");
-				}
+				var myclass = this.className.substring(4);
 			    //1) Appending filters:
 				$('#myTable tr').filter(':visible').not('tr.'+myclass).hide("slow"); 
 				$('tr#header').show("slow");
@@ -179,7 +172,7 @@
 			clear:none;
 		}
 		#filters, #myp {
-			width:99%;
+			width:70%;
 			/*position:relative;
 			float:left;*/
 		}
@@ -189,15 +182,6 @@
 			/*top:-110px;*/
 			width:100px;
 			font-size:14px;
-		}
-		.checkbox {
-			float:left;
-			border:1px solid grey;
-			margin-left:0px;
-		}
-		input, label {
-			padding:0;
-			margin:0;
 		}
         </style>
         <link href="css/style.css" rel="stylesheet">
