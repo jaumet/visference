@@ -3,7 +3,10 @@ VISFERENCE
 
 ToDo at July, 11th 2013
 
-SuperList index:
+SuperList index2:
+- Add multi checkbox filters: http://www.webegg.co.uk/jquery-multiple-filter/
+
+SuperList index2:
 - on click filters, change class to active
 - Table head is hardcoded. It needs to be taken from "data/my.json"
 DONE- Table: the titles doesn't need to be centered in the TD. Define a class for the non-title-TDs
