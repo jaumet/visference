@@ -8,6 +8,7 @@
         <script src="js/jquery.tablesorter.js"></script>
 		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <script>
+        $(document).ready(function() {
         	function count(){
 				var vis = $("#myTable tr").filter(':visible').length -1;
 				$("#counter").html(vis);
@@ -15,13 +16,14 @@
 	        var isInteger = function(a) {
 			    return ((typeof a !== 'number') || (a % 1 !== 0)) ? false : true;
 			};
+			
 	        thead = '<thead class="header"><tr id="header"><th>ID</th><th>title</th><th>Topic 1</th><th>Topic 2</th><th>Topic 3</th><th>Topic 4</th><th>Topic 5</th></tr></thead>'; 
+        	
         	$.getJSON("data/my.json", function(data){
 				var items = [thead];
 				var it = ''; var circle;var nclass='';
 				$.each(data, function(key1, val1) {
 					$.each(val1, function(key, val) {
-						//alert(key+' | '+key.substring(0,5)+' | '+val);	
 						if (key == "title" || key == "id") {
 							circle = val;
 						}
@@ -44,76 +46,75 @@
 				    'id': 'myTable',
 				    html: items.join('')
 				}).appendTo('#list');
-				$("#myTable").tablesorter({ 
-					sortList: [[0,0]]
+				$("#myTable")
+					.tablesorter({ 
+						sortList: [[0,0]]
 	  		        });
 				count();
 				$("#myTable tr td:nth-child(2)").addClass("tatbletitle");
 			});
-			
 
-		/////////////////////////////////
-		// Getting axis list from JSON //
-
-		$.getJSON("data/filters.json", function(data){
-			var items = ['<p>Filter papers by:</p>'];
-			$.each(data, function(key1, val1) {
-				var myaxis = ''; var myval = '';var myname = '';
-				$.each(val1, function(key, val) {
-					if (key == "axisname") 
-					{
-						myaxis = '<span class="btn btn-inverse" style="cursor:default;border-right:0px solid white;float:left;">'+val+'</span><div style="clear:both;"></div>';
-					} else {
-						$.each(val, function(key2, val2) {
-							$.each(val2, function(key3, val3) {
-								if (key3 == "code") {
-									// Counting papers for this axes value:
-									var c = $("#myTable tr\."+val3).length;
-									if (c > 0) {
-										myname = '<span class="checkbox btn btn-primary" style="xwidth:'+c*80+'px;"><input checked type="checkbox" class="checked '+val3+'" />('+c;
+			/////////////////////////////////
+			// Getting axis list from JSON //
+			$.getJSON("data/filters.json", function(data){
+				var items = [''];
+				$.each(data, function(key1, val1) {
+					var myaxis = ''; var myval = '';var myname = '';
+					$.each(val1, function(key, val) {
+						if (key == "axisname") 
+						{
+							myaxis = '<span class="btn btp-mini btn-inverse" style="cursor:default;border-right:0px solid white;width:150px;height:20px;">'+val+'</span><br />';
+						} else {
+							$.each(val, function(key2, val2) {
+								$.each(val2, function(key3, val3) {
+									if (key3 == "code") {
+										// Counting papers for this axes value:
+										var c = $("#myTable tr\."+val3).length;
+										if (c > 0) {
+											myname = '<span class="checkbox btn btn-mini btn-primary"><input checked type="checkbox" class="checked '+val3+'" />('+c;
+										}
+									} else {
+										if (myname.length>1) {
+											myval =  myval  +  myname +') '+ val3 +'</span>';
+											myname = '';
+										}
 									}
-								} else {
-									if (myname.length>1) {
-										myval =  myval  +  myname +') '+ val3 +'</span>';
-										myname = '';
-									}
-								}
+								});
 							});
-						});
+						}
+					});
+					items.push('<p>' + myaxis + myval + '</p>');
+				});
+				$('<div/>', {
+				    'class': 'my',
+				    'id': 'myFilter',
+				    html: items.join('')
+				}).appendTo('#filters');
+	
+				////////////
+				// Filter //				
+				$('input').click(function(){
+					var myclass = this.className.substring(8);
+					if ($(this).is(':checked')) {
+						$('#myTable tr.'+myclass).show("slow");
+						$('input.'+myclass).parent('span').addClass('btn-primary');
+					} else {
+						$('#myTable tr.'+myclass).hide("slow");
+						$('input.'+myclass).parent('span').removeClass('btn-primary');
 					}
+					$('#myTable tr.'+myclass).promise().done(function(){
+						count();
+					});
 				});
-				items.push('<p>' + myaxis + '&nbsp;' + myval + '</p>');
-			});
-			$('<div/>', {
-			    'class': 'my',
-			    'id': 'myFilter',
-			    html: items.join('')
-			}).appendTo('#filters');
-
-			////////////
-			// Filter //				
-			$('input').click(function(){
-				var myclass = this.className.substring(8);
-				if ($(this).is(':checked')) {
-					$('#myTable tr.'+myclass).show("slow");
-					$('input.'+myclass).parent('span').addClass('btn-primary');
-				} else {
-					$('#myTable tr.'+myclass).hide("slow");
-					$('input.'+myclass).parent('span').removeClass('btn-primary');
-				}
-				$('#myTable tr.'+myclass).promise().done(function(){
-					count();
+				$('#showall').click(function(){
+					$('#myTable tr').show("slow");
+					$('#myTable tr').promise().done(function(){
+						count();
+						$('input').parent('span').addClass('btn-primary');
+						$('input').prop('checked', true);
+					});
 				});
 			});
-			$('#showall').click(function(){
-				$('#myTable tr').show("slow");
-				$('#myTable tr').promise().done(function(){
-					count();
-					$('input').parent('span').addClass('bg');
-				});
-			});
-		});
-		$(document).ready(function() {
 			$('#showhidefilters').click(function() {
 				$('#filters').toggle("slow");
 			});
@@ -153,23 +154,28 @@
 		  color:#ffffff;
 		  font-size:70px;
 		}
+		#tablecontainer {
+			position:relative;
+			float:left;
+			width:70%;
+			padding-left:30px;
+		}
 		td {
 		  text-align:center;
 		}
 		.tatbletitle {
 		   text-align:left;
 		}
-		.btn-group .btn {
-			border-left:3px solid grey;
-		}
 		.hero-unit {
-			padding-top:10px;
+			padding:0;
+			padding-top:0;
+			background-color:#EFEFEF;
 		}
 		.container:after {
 			clear:none;
 		}
-		#filters, #myp {
-			width:99%;
+		.my {
+			padding:0;
 		}
 		#right {
 			position:relative;
@@ -182,7 +188,12 @@
 			border:0px solid grey;
 			margin-left:4px;
 			padding-left:25px;
-			width: 150px;
+			/*width: 150px;*/
+		}
+		#title {
+			padding-left:20px;
+			position:relative;
+			float:left;
 		}
         </style>
         <link href="css/style.css" rel="stylesheet">
@@ -226,8 +237,8 @@
 	
 	<div class="container">
 		<!-- Main hero unit for a primary marketing message or call to action -->
-		<p><a href="#" id="showhidefilters" class="btn btn-primary">show/hide filters</a>	</p>
-		<div class="hero-unit" style="position:relative;float:top;">
+		<div style="position:relative;">
+			
 			<div id="right">
 				<p> Showing</p>
 				<div id="countercontainer">
@@ -236,19 +247,24 @@
 					</span>
 				</div>
 				<p>papers</p>
-			</div>
-			<div style="position:relative;">
-				<h2>JRML 2013</h2>
-				<p id="myp"><a href="#" id="showall" class="btn btn-primary"/>show all</a></p>
-			</div>
-			<div id="filters">
-			</div>
+			</div>	
+		</div>
+		<p><a href="#" id="showhidefilters" class="btn btn-primary">show/hide filters</a></p>
+		<div class="hero-unit"  data-spy="affix" style="position:relative;float:left;width:15%;">
+		<p>Filter papers by:</p>
+		<p id="myp"><a href="#" id="showall" class="btn btn-primary"/>show all</a></p>
+		<div id="filters">
+		</div>
 		</div>
 	</div>
-	<div style="clear:both;"></div>
+	<!--<div style="clear:both;"></div>-->
 	<!--Post bootstrap-->
-	<h3>TopicTable</h3>
-	<div id="list">
+	<div id="title"><h2>JRML Volume 13</h2>
+	</div>
+	<div id="tablecontainer">
+		<h3>List of papers</h3>
+		<div id="list">
+		</div>
 	</div>
 	<hr>
 	<footer>
