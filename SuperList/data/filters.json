@@ -1,15 +1,15 @@
-[
+var FILTERS = [
 	{
 		"axisname": "axis 1",
 		"values" : 
 			[
 				{
 					"code": "11",
-			    		"name": "one-one"
+			    	"name": "one-one"
 		   		},
 				{
 					"code": "12",
-			    		"name": "one-two"
+			    	"name": "one-two"
 		   		}
 	   		]
 	},
@@ -19,15 +19,15 @@
 			[
 				{
 					"code": "21",
-			    		"name": "two-one"
+			    	"name": "two-one"
 		   		},
 				{
 					"code": "22",
-			    		"name": "two-two"
+			    	"name": "two-two"
 		   		},
 				{
 					"code": "23",
-			    		"name": "two-three"
+			    	"name": "two-three"
 		   		}
 	   		]
 	},
@@ -37,11 +37,11 @@
 			[
 				{
 					"code": "31",
-			    		"name": "three-one"
+			    	"name": "three-one"
 		   		},
 				{
 					"code": "32",
-			    		"name": "three-two"
+			    	"name": "three-two"
 		   		}
 	   		]
 	},
@@ -51,15 +51,15 @@
 			[
 				{
 					"code": "41",
-			    		"name": "four-one"
+			    	"name": "four-one"
 		   		},
 				{
 					"code": "42",
-			    		"name": "four-two"
+			    	"name": "four-two"
 		   		},
 				{
 					"code": "43",
-			    		"name": "four-three"
+			    	"name": "four-three"
 		   		}
 	   		]
 	},
@@ -69,23 +69,23 @@
 			[
 				{
 					"code": "51",
-			    		"name": "five-one"
+			    	"name": "five-one"
 		   		},
 				{
 					"code": "52",
-			    		"name": "five-two"
+			    	"name": "five-two"
 		   		},
 				{
 					"code": "53",
-			    		"name": "five-three"
+			    	"name": "five-three"
 		   		},
 				{
 					"code": "54",
-			    		"name": "five-four"
+			    	"name": "five-four"
 		   		},
 				{
 					"code": "55",
-			    		"name": "five-five"
+			    	"name": "five-five"
 		   		}
 	   		]
 	}
