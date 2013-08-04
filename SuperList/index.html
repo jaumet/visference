@@ -102,69 +102,72 @@
 					});
 					// Array of checked filter's checkboxes:
 					var selected = new Array();
-					var sel = '';
 					$('#myFilter p span.checkbox input:checked').each(function() {
-						selected.push($(this).attr('class').substring(8));
-						sel +="."+$(this).attr('class').substring(8)
+						selected.push("."+$(this).attr('class').substring(8));
 					});
 					selected.sort();
-					
 					console.log ("selected filters: "+selected);
-					//console.log ("sel filters: "+sel+" | my sel: "+'#myTable tr'+sel);
-					var zclass=".22.32, 22.31";
-					// How many filters of each axis
-					var my = '';var mylist = new Array();var mycount = new Array();
-					$.each(selected, function(i, el) {
-						my = Math.floor(el/10);
-						if ($.inArray(my, mylist) == -1) {
-							mylist[my]=my;
-							mycount[my]=1;
-						} else {
-							//mylist[my].push(my);
-							mycount[my]++;
-						}
-					});
-					// How many groups? 
-					var myprod = 1;
-					$.each(mycount, function(i, el){
-						if (isInteger(el)) {
-							myprod *=mycount[i];
-						}
-					});
-
-					// Build the axes with only one filter:
-					var myfix = "";var unions = new Array();
-					$.each(selected, function(i, el) {
-						my = Math.floor(el/10);
-						if (mycount[my] == 1) {
-								myfix += "."+el;
-						} else {
-							unions.push(mycount[my]);
-						}
-					});
 					
-					// Build the axes with more than one filter:
-					// number of axes with filter > 1 = unions
-					xclass = new Array();
-					for (i=0;i<myprod;i++) {
-						var tmp = "";
-						
-						xclass.push(myfix);
+					//////////////////////////////////////////////////////////
+					// Starting the functions to get the selector of filters
+					
+					// The function to get the category of a particular subcategory
+					function getCategory(subCat){
+						return subCat.substr(1, 1);
 					}
-					list = [[1, 2],
-					// Cartessian producst. Check:
-					// http://jsfiddle.net/nV2XU/
-					// from http://stackoverflow.com/questions/9422386/lazy-cartesian-product-of-arrays-arbitrary-nested-loops
+
+					// The function to build our selector recursively
+					function buildSelector(categoryList, categoryIndexArray, categoryIndex)
+					{
+						if (categoryIndex == categoryIndexArray.length - 1)
+							return categoryList[categoryIndexArray[categoryIndex]];
+						else {
+							var results = [];
+							var subList = buildSelector(categoryList, categoryIndexArray, categoryIndex + 1);
+							$.each(categoryList[categoryIndexArray[categoryIndex]],function(_,e){
+								$.each(subList,function(_,e1){
+									results.push(e + e1);
+								});
+							});
+							return results;
+						}
+					}
+					var categories = {}; 
+					var categoryArray = [];
+					// build the categories and categoryArray 
+					$.each(selected,function(_,e){
+						var cat = getCategory(e);
+						if (categories[cat] === undefined)
+						{
+							categories[cat] = [];
+							categoryArray.push(cat);
+						}
+						if (categories[cat].indexOf(e) < 0)
+							categories[cat].push(e);
+					});
+					// build our selector as array of groups
+					var selectors = buildSelector(categories, categoryArray, 0);
+					// join all selector groups to get the string form
+					console.log(selectors.join(","));
+					// Finally the Selector list is here:
+					var xclass = selectors.join(",");
 					
-					console.log("here: ");
-					//console.log("myfix: "+myfix+" | ' mycount: "+mycount);
-					//console.log("myprod: "+myprod);
-					//console.log("unions: "+unions+" | ' xclass: "+xclass);
+					// End of functions to get the selctor of filters
+					////////////////////////////////////////////////////////
+					//
+					// HERE WE NEED TO IMPLEMENT THE RECOUNTING OF VISIBLE 
+					// ITEMS AND ADD THEM LIVE TO THE <SPAN> OF FILTERS
+					//
+					//  (the number needs a specific class name to be 
+					//  accessible easily)
+					//
+					///////////////////////////////////////////////////////
+					
+					
 					var myclass = this.className.substring(8);
-					
 					$('#myTable tr').hide();
 					$('#myTable tr:first').show();
-					$('#myTable tr'+zclass).show("slow");
+					$('#myTable tr'+xclass).show("slow");
 
 					myblue = $('input.'+myclass).parent('span');
 					if ($(this).is(':checked')) {
@@ -176,20 +179,8 @@
 					$('#myTable tr'+sel).promise().done(function(){
 						count();
 					});
-/*
-					var myclass = this.className.substring(8);
-					if ($(this).is(':checked')) {
-						$('#myTable tr.'+myclass).show("slow");
-						$('input.'+myclass).parent('span').addClass('btn-primary');
-					} else {
-						$('#myTable tr.'+myclass).hide("slow");
-						$('input.'+myclass).parent('span').removeClass('btn-primary');
-					}
-					$('#myTable tr.'+myclass).promise().done(function(){
-						count();
-					});
-*/
 				});
+				
 				$('#showall').click(function(){
 					$('#myTable tr').show("slow");
 					$('#myTable tr').promise().done(function(){

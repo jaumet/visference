@@ -20,11 +20,11 @@ var FIELDS = [
 					values :
 					[
 						{
-							"code": "11",
+							"code": "a1",
 							"name": "one-one"
 						},
 						{
-							"code": "12",
+							"code": "a2",
 							"name": "one-two"
 						}
 					] 		
@@ -41,91 +41,91 @@ var FIELDS = [
 	];
 var FILTERS = [
 	{
-		"axisname": "axis 1",
+		"axisname": "axis a",
 		"values" : 
 			[
 				{
-					"code": "11",
+					"code": "a1",
 			    	"name": "one-one"
 		   		},
 				{
-					"code": "12",
+					"code": "a2",
 			    	"name": "one-two"
 		   		}
 	   		]
 	},
 	{
-		"axisname": "axis 2",
+		"axisname": "axis b",
 		"values" : 
 			[
 				{
-					"code": "21",
+					"code": "b1",
 			    	"name": "two-one"
 		   		},
 				{
-					"code": "22",
+					"code": "b2",
 			    	"name": "two-two"
 		   		},
 				{
-					"code": "23",
+					"code": "b3",
 			    	"name": "two-three"
 		   		}
 	   		]
 	},
 	{
-		"axisname": "axis 3",
+		"axisname": "axis c",
 		"values" : 
 			[
 				{
-					"code": "31",
+					"code": "c1",
 			    	"name": "three-one"
 		   		},
 				{
-					"code": "32",
+					"code": "c2",
 			    	"name": "three-two"
 		   		}
 	   		]
 	},
 	{
-		"axisname": "axis 4",
+		"axisname": "axis d",
 		"values" : 
 			[
 				{
-					"code": "41",
+					"code": "d1",
 			    	"name": "four-one"
 		   		},
 				{
-					"code": "42",
+					"code": "d2",
 			    	"name": "four-two"
 		   		},
 				{
-					"code": "43",
+					"code": "d3",
 			    	"name": "four-three"
 		   		}
 	   		]
 	},
 	{
-		"axisname": "axis 5",
+		"axisname": "axis e",
 		"values" : 
 			[
 				{
-					"code": "51",
+					"code": "e1",
 			    	"name": "five-one"
 		   		},
 				{
-					"code": "52",
+					"code": "e2",
 			    	"name": "five-two"
 		   		},
 				{
-					"code": "53",
+					"code": "e3",
 			    	"name": "five-three"
 		   		},
 				{
-					"code": "54",
+					"code": "e4",
 			    	"name": "five-four"
 		   		},
 				{
-					"code": "55",
+					"code": "e5",
 			    	"name": "five-five"
 		   		}
 	   		]
@@ -139,11 +139,11 @@ var DATA = [
 		"id": "0","title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities","topic1": 90,"topic2": 0,	"topic3": 0,
 		"topic4": 70,
 		"topic5": 30,
-		"axis1": 11,
-		"axis2": 23,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 51
+		"axis1": "a1",
+		"axis2": "b3",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e1"
 	},
 	{
 		"id": "1",
@@ -153,11 +153,11 @@ var DATA = [
 		"topic3": 20,
 		"topic4": 100,
 		"topic5": 30,
-		"axis1": 12,
-		"axis2": 23,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 52
+		"axis1": "a2",
+		"axis2": "b3",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e2"
 	},
 	{
 		"id": "2",
@@ -167,11 +167,11 @@ var DATA = [
 		"topic3": 0,
 		"topic4": 10,
 		"topic5": 30,
-		"axis1": 11,
-		"axis2": 22,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 53
+		"axis1": "a1",
+		"axis2": "b2",	
+		"axis3": "c1",
+		"axis4": "d2",
+		"axis5": "e3"
 	},
 	{
 		"id": "3",
@@ -181,11 +181,11 @@ var DATA = [
 		"topic3": 90,
 		"topic4": 100,
 		"topic5": 70,
-		"axis1": 12,
-		"axis2": 22,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 54
+		"axis1": "a2",
+		"axis2": "b2",	
+		"axis3": "c2",
+		"axis4": "d2",
+		"axis5": "e4"
 	},
 	{
 		"id": "4",
@@ -195,11 +195,11 @@ var DATA = [
 		"topic3": 30,
 		"topic4": 70,
 		"topic5": 100,
-		"axis1": 12,
-		"axis2": 21,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 55
+		"axis1": "a2",
+		"axis2": "b1",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e5"
 	},
 	{
 		"id": "5",
@@ -209,11 +209,11 @@ var DATA = [
 		"topic3": 20,
 		"topic4": 10,
 		"topic5": 10,
-		"axis1": 12,
-		"axis2": 21,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 54
+		"axis1": "a2",
+		"axis2": "b1",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e4"
 	},
 	{
 		"id": "6",
@@ -223,11 +223,11 @@ var DATA = [
 		"topic3": 100,
 		"topic4": 50,
 		"topic5": 30,
-		"axis1": 12,
-		"axis2": 22,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 55
+		"axis1": "a2",
+		"axis2": "b2",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e5"
 	},
 		{
 		"id": "0",
@@ -237,11 +237,11 @@ var DATA = [
 		"topic3": 0,
 		"topic4": 70,
 		"topic5": 30,
-		"axis1": 11,
-		"axis2": 23,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 51
+		"axis1": "a1",
+		"axis2": "b3",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e1"
 	},
 	{
 		"id": "1",
@@ -251,11 +251,11 @@ var DATA = [
 		"topic3": 20,
 		"topic4": 100,
 		"topic5": 30,
-		"axis1": 12,
-		"axis2": 23,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 52
+		"axis1": "a2",
+		"axis2": "b3",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e2"
 	},
 	{
 		"id": "2",
@@ -265,11 +265,11 @@ var DATA = [
 		"topic3": 0,
 		"topic4": 10,
 		"topic5": 30,
-		"axis1": 11,
-		"axis2": 22,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 53
+		"axis1": "a1",
+		"axis2": "b2",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e3"
 	},
 	{
 		"id": "3",
@@ -279,11 +279,11 @@ var DATA = [
 		"topic3": 90,
 		"topic4": 100,
 		"topic5": 70,
-		"axis1": 12,
-		"axis2": 22,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 54
+		"axis1": "a2",
+		"axis2": "b2",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e4"
 	},
 	{
 		"id": "4",
@@ -293,11 +293,11 @@ var DATA = [
 		"topic3": 30,
 		"topic4": 70,
 		"topic5": 100,
-		"axis1": 12,
-		"axis2": 21,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 55
+		"axis1": "a2",
+		"axis2": "b1",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e5"
 	},
 	{
 		"id": "5",
@@ -307,11 +307,11 @@ var DATA = [
 		"topic3": 20,
 		"topic4": 10,
 		"topic5": 10,
-		"axis1": 12,
-		"axis2": 21,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 54
+		"axis1": "a2",
+		"axis2": "b1",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e4"
 	},
 	{
 		"id": "6",
@@ -321,11 +321,11 @@ var DATA = [
 		"topic3": 100,
 		"topic4": 50,
 		"topic5": 30,
-		"axis1": 12,
-		"axis2": 22,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 55
+		"axis1": "a2",
+		"axis2": "b2",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e5"
 	},
 		{
 		"id": "0",
@@ -335,11 +335,11 @@ var DATA = [
 		"topic3": 0,
 		"topic4": 70,
 		"topic5": 30,
-		"axis1": 11,
-		"axis2": 23,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 51
+		"axis1": "a1",
+		"axis2": "b3",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e1"
 	},
 	{
 		"id": "1",
@@ -349,11 +349,11 @@ var DATA = [
 		"topic3": 20,
 		"topic4": 100,
 		"topic5": 30,
-		"axis1": 12,
-		"axis2": 23,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 52
+		"axis1": "a2",
+		"axis2": "b3",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e2"
 	},
 	{
 		"id": "2",
@@ -363,11 +363,11 @@ var DATA = [
 		"topic3": 0,
 		"topic4": 10,
 		"topic5": 30,
-		"axis1": 11,
-		"axis2": 22,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 53
+		"axis1": "a1",
+		"axis2": "b2",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e3"
 	},
 	{
 		"id": "3",
@@ -377,11 +377,11 @@ var DATA = [
 		"topic3": 90,
 		"topic4": 100,
 		"topic5": 70,
-		"axis1": 12,
-		"axis2": 22,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 54
+		"axis1": "a2",
+		"axis2": "b2",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e4"
 	},
 	{
 		"id": "4",
@@ -391,11 +391,11 @@ var DATA = [
 		"topic3": 30,
 		"topic4": 70,
 		"topic5": 100,
-		"axis1": 12,
-		"axis2": 21,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 55
+		"axis1": "a2",
+		"axis2": "b1",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e5"
 	},
 	{
 		"id": "5",
@@ -405,11 +405,11 @@ var DATA = [
 		"topic3": 20,
 		"topic4": 10,
 		"topic5": 10,
-		"axis1": 12,
-		"axis2": 21,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 54
+		"axis1": "a2",
+		"axis2": "b1",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e4"
 	},
 	{
 		"id": "6",
@@ -419,11 +419,11 @@ var DATA = [
 		"topic3": 100,
 		"topic4": 50,
 		"topic5": 30,
-		"axis1": 12,
-		"axis2": 22,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 55
+		"axis1": "a2",
+		"axis2": "b2",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e5"
 	},
 		{
 		"id": "0",
@@ -433,11 +433,11 @@ var DATA = [
 		"topic3": 0,
 		"topic4": 70,
 		"topic5": 30,
-		"axis1": 11,
-		"axis2": 23,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 51
+		"axis1": "a1",
+		"axis2": "b3",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e1"
 	},
 	{
 		"id": "1",
@@ -447,11 +447,11 @@ var DATA = [
 		"topic3": 50,
 		"topic4": 60,
 		"topic5": 60,
-		"axis1": 12,
-		"axis2": 23,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 52
+		"axis1": "a2",
+		"axis2": "b3",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e2"
 	},
 	{
 		"id": "2",
@@ -461,11 +461,11 @@ var DATA = [
 		"topic3": 70,
 		"topic4": 50,
 		"topic5": 10,
-		"axis1": 11,
-		"axis2": 22,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 53
+		"axis1": "a1",
+		"axis2": "b2",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e3"
 	},
 	{
 		"id": "3",
@@ -475,11 +475,11 @@ var DATA = [
 		"topic3": 30,
 		"topic4": 30,
 		"topic5": 30,
-		"axis1": 12,
-		"axis2": 22,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 54
+		"axis1": "a2",
+		"axis2": "b2",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e4"
 	},
 	{
 		"id": "4",
@@ -489,11 +489,11 @@ var DATA = [
 		"topic3": 60,
 		"topic4": 10,
 		"topic5": 50,
-		"axis1": 12,
-		"axis2": 21,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 55
+		"axis1": "a2",
+		"axis2": "b1",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e5"
 	},
 	{
 		"id": "5",
@@ -503,11 +503,11 @@ var DATA = [
 		"topic3": 20,
 		"topic4": 20,
 		"topic5": 20,
-		"axis1": 12,
-		"axis2": 21,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 54
+		"axis1": "a2",
+		"axis2": "b1",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e4"
 	},
 	{
 		"id": "6",
@@ -517,11 +517,11 @@ var DATA = [
 		"topic3": 10,
 		"topic4": 10,
 		"topic5": 10,
-		"axis1": 12,
-		"axis2": 22,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 55
+		"axis1": "a2",
+		"axis2": "b2",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e5"
 	},
 		{
 		"id": "0",
@@ -531,11 +531,11 @@ var DATA = [
 		"topic3": 90,
 		"topic4": 90,
 		"topic5": 90,
-		"axis1": 11,
-		"axis2": 23,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 51
+		"axis1": "a1",
+		"axis2": "b3",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e1"
 	},
 	{
 		"id": "1",
@@ -545,11 +545,11 @@ var DATA = [
 		"topic3": 30,
 		"topic4": 40,
 		"topic5": 100,
-		"axis1": 12,
-		"axis2": 23,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 52
+		"axis1": "a2",
+		"axis2": "b3",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e2"
 	},
 	{
 		"id": "2",
@@ -559,11 +559,11 @@ var DATA = [
 		"topic3": 25,
 		"topic4": 10,
 		"topic5": 10,
-		"axis1": 11,
-		"axis2": 22,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 53
+		"axis1": "a1",
+		"axis2": "b2",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e3"
 	},
 	{
 		"id": "3",
@@ -573,11 +573,11 @@ var DATA = [
 		"topic3": 50,
 		"topic4": 60,
 		"topic5": 100,
-		"axis1": 12,
-		"axis2": 22,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 54
+		"axis1": "a2",
+		"axis2": "b2",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e4"
 	},
 	{
 		"id": "4",
@@ -587,11 +587,11 @@ var DATA = [
 		"topic3": 30,
 		"topic4": 70,
 		"topic5": 100,
-		"axis1": 12,
-		"axis2": 21,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 55
+		"axis1": "a2",
+		"axis2": "b1",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e5"
 	},
 	{
 		"id": "5",
@@ -601,11 +601,11 @@ var DATA = [
 		"topic3": 20,
 		"topic4": 10,
 		"topic5": 10,
-		"axis1": 12,
-		"axis2": 21,	
-		"axis3": 32,
-		"axis4": 43,
-		"axis5": 54
+		"axis1": "a2",
+		"axis2": "b1",	
+		"axis3": "c2",
+		"axis4": "d3",
+		"axis5": "e4"
 	},
 	{
 		"id": "6",
@@ -615,10 +615,10 @@ var DATA = [
 		"topic3": 100,
 		"topic4": 50,
 		"topic5": 30,
-		"axis1": 12,
-		"axis2": 22,	
-		"axis3": 31,
-		"axis4": 43,
-		"axis5": 55
+		"axis1": "a2",
+		"axis2": "b2",	
+		"axis3": "c1",
+		"axis4": "d3",
+		"axis5": "e5"
 	}
 ]
