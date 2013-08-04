@@ -107,14 +107,64 @@
 						selected.push($(this).attr('class').substring(8));
 						sel +="."+$(this).attr('class').substring(8)
 					});
+					selected.sort();
+					
 					console.log ("selected filters: "+selected);
-					console.log ("sel filters: "+sel+" | my sel: "+'#myTable tr'+sel);
-					var xclass=".22.32, 22.31";
+					//console.log ("sel filters: "+sel+" | my sel: "+'#myTable tr'+sel);
+					var zclass=".22.32, 22.31";
+					// How many filters of each axis
+					var my = '';var mylist = new Array();var mycount = new Array();
+					$.each(selected, function(i, el) {
+						my = Math.floor(el/10);
+						if ($.inArray(my, mylist) == -1) {
+							mylist[my]=my;
+							mycount[my]=1;
+						} else {
+							//mylist[my].push(my);
+							mycount[my]++;
+						}
+					});
+					// How many groups? 
+					var myprod = 1;
+					$.each(mycount, function(i, el){
+						if (isInteger(el)) {
+							myprod *=mycount[i];
+						}
+					});
+
+					// Build the axes with only one filter:
+					var myfix = "";var unions = new Array();
+					$.each(selected, function(i, el) {
+						my = Math.floor(el/10);
+						if (mycount[my] == 1) {
+								myfix += "."+el;
+						} else {
+							unions.push(mycount[my]);
+						}
+					});
+					
+					// Build the axes with more than one filter:
+					// number of axes with filter > 1 = unions
+					xclass = new Array();
+					for (i=0;i<myprod;i++) {
+						var tmp = "";
+						
+						xclass.push(myfix);
+					}
+					list = [[1, 2],
+					// Cartessian producst. Check:
+					// http://jsfiddle.net/nV2XU/
+					// from http://stackoverflow.com/questions/9422386/lazy-cartesian-product-of-arrays-arbitrary-nested-loops
+					
+					console.log("here: ");
+					//console.log("myfix: "+myfix+" | ' mycount: "+mycount);
+					//console.log("myprod: "+myprod);
+					//console.log("unions: "+unions+" | ' xclass: "+xclass);
 					var myclass = this.className.substring(8);
 					
 					$('#myTable tr').hide();
 					$('#myTable tr:first').show();
-					$('#myTable tr'+xclass).show("slow");
+					$('#myTable tr'+zclass).show("slow");
 
 					myblue = $('input.'+myclass).parent('span');
 					if ($(this).is(':checked')) {
