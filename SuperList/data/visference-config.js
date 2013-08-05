@@ -1,136 +1,134 @@
+/////////////////////////////////
+//          VISFERENCE
+//      CONFIGURATION FILE
+//////////////////////// [Canberra, Jul-Set2013 by Jaume@Nualart.cat]
+// Visference, as it is now, are two exploration tools for a collection of items
+// First application of Visaference is for academic papers from conferences. therefor its name.
+// The two tools are SuperList and AREA 
+// SuperList:
+//
+// AREA: 
+//
+// Three variable need to be defined:
+// FIELDS -> This variable is only used by AREA. 
+//    It defines the machine name the human name and whether each paramater 
+//    is eligible for filtering.
+// 
+// FILTERS -> this variable is used only for Superlist.
+//    It defines the machine names for each category
+
 
 var FIELDS = [
-		{
-			"axisname": 
-				{ human: "ID", filter: "0"},
-			"mood": 
-				{ human: "Mood", filter: "1"},
-			"gender": 
-				{ human: "Gender", filter: "1"},
-			"name": 
-				{ human: "Name", filter: "1"}
-		}
-	];
-var FIELDS = [
-		{
-			"axis1": 
-				{ 
-					human: "ID", 
-					filter: "0", 
-					values :
-					[
-						{
-							"code": "a1",
-							"name": "one-one"
-						},
-						{
-							"code": "a2",
-							"name": "one-two"
-						}
-					] 		
-				},
-			"axis 2": 
-				{ human: "Mood", filter: "1"},
-			"axis 3": 
-				{ human: "Gender", filter: "1"},
-			"axis 4": 
-				{ human: "Name", filter: "1"},
-			"axis 5": 
-				{ human: "Name", filter: "1"}
-		}
-	];
-var FILTERS = [
 	{
-		"axisname": "axis a",
-		"values" : 
-			[
-				{
-					"code": "a1",
-			    	"name": "one-one"
-		   		},
-				{
-					"code": "a2",
-			    	"name": "one-two"
-		   		}
-	   		]
-	},
-	{
-		"axisname": "axis b",
-		"values" : 
-			[
-				{
-					"code": "b1",
-			    	"name": "two-one"
-		   		},
-				{
-					"code": "b2",
-			    	"name": "two-two"
-		   		},
-				{
-					"code": "b3",
-			    	"name": "two-three"
-		   		}
-	   		]
-	},
-	{
-		"axisname": "axis c",
-		"values" : 
-			[
-				{
-					"code": "c1",
-			    	"name": "three-one"
-		   		},
-				{
-					"code": "c2",
-			    	"name": "three-two"
-		   		}
-	   		]
-	},
-	{
-		"axisname": "axis d",
-		"values" : 
-			[
-				{
-					"code": "d1",
-			    	"name": "four-one"
-		   		},
-				{
-					"code": "d2",
-			    	"name": "four-two"
-		   		},
-				{
-					"code": "d3",
-			    	"name": "four-three"
-		   		}
-	   		]
-	},
-	{
-		"axisname": "axis e",
-		"values" : 
-			[
-				{
-					"code": "e1",
-			    	"name": "five-one"
-		   		},
-				{
-					"code": "e2",
-			    	"name": "five-two"
-		   		},
-				{
-					"code": "e3",
-			    	"name": "five-three"
-		   		},
-				{
-					"code": "e4",
-			    	"name": "five-four"
-		   		},
-				{
-					"code": "e5",
-			    	"name": "five-five"
-		   		}
-	   		]
+		"id": 
+			{ human: "My ID", filter: "0"},
+		"title": 
+			{ human: "My Title", filter: "1"},
+		"topic1": 
+			{ human: "My Topic 1", filter: "0"},
+		"topic2": 
+			{ human: "My Topic 2", filter: "1"},
+		"topic3": 
+			{ human: "My Topic 3", filter: "1"},
+		"topic4": 
+			{ human: "My Topic 4", filter: "1"},
+		"topic5": 
+			{ human: "My Topic 5", filter: "1"},
+		"axis1": 
+			{ human: "My axis 1", filter: "1"},
+		"a1": 
+			{ human: "My A1", filter: "0"},
+		"a2": 
+			{ human: "My A2", filter: "0"},
+		"axis2": 
+			{ human: "My axis 2", filter: "1"},
+		"b1": 
+			{ human: "My B1", filter: "0"},
+		"b2": 
+			{ human: "My B2", filter: "0"},
+		"b3": 
+			{ human: "My B3", filter: "0"},
+		"axis3": 
+			{ human: "My axis 3", filter: "1"},
+		"c1": 
+			{ human: "My C1", filter: "0"},
+		"c2": 
+			{ human: "My C2", filter: "0"},
+		"axis4": 
+			{ human: "My axis 4", filter: "1"},
+		"d1": 
+			{ human: "My D1", filter: "0"},
+		"d2": 
+			{ human: "My D2", filter: "0"},
+		"d3": 
+			{ human: "My D3", filter: "0"},
+		"axis5": 
+			{ human: "My axis 5", filter: "1"},
+		"e1": 
+			{ human: "My E1", filter: "0"},
+		"e2": 
+			{ human: "My E2", filter: "0"},
+		"e3": 
+			{ human: "My E3", filter: "0"},
+		"e4": 
+			{ human: "My E4", filter: "0"},
+		"e5": 
+			{ human: "My E5", filter: "0"}
 	}
-]
+];
+
+var SUPERLIST_FIELDS = [
+	{
+	"axisname": 
+		"axis1",
+		"values" : 
+			[
+				{"code": "a1"},
+				{"code": "a2"}
+			]
+	},
+	{
+	"axisname":
+		"axis2",
+		"values" : 
+			[
+				{"code": "b1"},
+				{"code": "b2"},
+				{"code": "b3"}
+			]
+	},
+	{
+	"axisname": 
+		"axis3",
+		"values" : 
+			[
+				{"code": "c1"},
+				{"code": "c2"}
+	   		]
+	},
+	{
+	"axisname":
+		"axis4",
+		"values" : 
+			[
+				{"code": "d1"},
+				{"code": "d2"},
+				{"code": "d3"}
+			]
+	},
+	{
+	"axisname":
+		"axis5",
+		"values" : 
+			[
+				{"code": "e1"},
+				{"code": "e2"},
+				{"code": "e3"},
+				{"code": "e4"},
+				{"code": "e5"}
+			]
+	}
+];
 
 
 
