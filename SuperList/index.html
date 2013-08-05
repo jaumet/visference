@@ -18,13 +18,19 @@
 	        var isInteger = function(a) {
 			    return ((typeof a !== 'number') || (a % 1 !== 0)) ? false : true;
 			};
-			// FIXME The Table head must be dynamic from var FIELDS
-	        thead = '<thead class="header"><tr id="header"><th>ID</th><th>title</th><th>Topic 1</th><th>Topic 2</th><th>Topic 3</th><th>Topic 4</th><th>Topic 5</th></tr></thead>';
+
+			thead = '<thead class="header"><tr id="header">';
+			$.each(FIELDS[0], function(i, e) {
+				if (e['role'] == "table" || e['role'] == "table-area") {
+					thead += '<th>'+e['human']+'</th>';
+				}
+			});
+	        thead += '</tr></thead>';
 			var items = [thead];
 			var it = ''; var circle;var nclass='';
 			$.each(DATA, function(key1, val1) {
 				$.each(val1, function(key, val) {
-					if (key == "title" || key == "id") {
+					if (key == "title" || key == "id" || key == "authors") {
 						circle = val;
 					}
 					else if (key.substring(0,4) === "axis") {
@@ -46,17 +52,16 @@
 				'id': 'myTable',
 				html: items.join('')
 			}).appendTo('#list');
-			$("#myTable")
-				.tablesorter({ 
-					sortList: [[0,0]]
-				});
+			$("#myTable").tablesorter({ 
+				sortList: [[0,0]]
+			});
 			count();
-			$("#myTable tr td:nth-child(2)").addClass("tatbletitle");
+			$("#myTable tr td:nth-child(2)").addClass("tabletitle");
 
 			/////////////////////////////////
 			// Getting axis list from JSON //
 			var items = [''];
-			$.each(SUPERLIST_FIELDS, function(key1, val1) {
+			$.each(SUPERLIST_CATEGORIES, function(key1, val1) {
 				var myaxis = ''; var myval = '';var myname = '';
 				$.each(val1, function(key, val) {
 					if (key == "axisname") {
@@ -64,22 +69,15 @@
 					} else {
 						$.each(val, function(key2, val2) {
 							$.each(val2, function(key3, val3) {
-								//if (key3 == "code") {
-									//console.log("VAL3 :"+val3);
-									// Counting papers withis axis value:
-									var c = $("#myTable tr\."+val3).length;
-									//console.log("CCCCCCCC :"+c);
-									if (c > 0) {
-										myname = '<span class="checkbox btn btn-mini"><input type="checkbox" class="checked '+val3+'" />('+c;
-									}
-								//} else {
-									if (myname.length>1) {
-										myval =  myval  +  myname +') '+ FIELDS[0][val3]["human"] +'</span>';
-										console.log("fields :"+FIELDS[0][val3]['human']);
-										//FIELDS[0][val]['human']
-										myname = '';
-									}
-								//}
+								// Counting papers withis axis value:
+								var c = $("#myTable tr\."+val3).length;
+								if (c > 0) {
+									myname = '<span class="checkbox btn btn-mini"><input type="checkbox" class="checked '+val3+'" />('+c;
+								}
+								if (myname.length>1) {
+									myval =  myval  +  myname +') '+ FIELDS[0][val3]["human"] +'</span>';
+									myname = '';
+								}
 							});
 						});
 					}
@@ -104,10 +102,11 @@
 				var selected = new Array(); var selected_str = "";
 				$('#myFilter p span.checkbox input:checked').each(function() {
 					selected.push("."+$(this).attr('class').substring(8));
-					selected_str += "."+$(this).attr('class').substring(8)
 				});
 				selected.sort();
-				console.log ("selected_str : "+selected_str);
+				selected_str = selected.join();
+				
+				
 				
 				//////////////////////////////////////////////////////////
 				// Starting the functions to get the selector of filters
@@ -133,53 +132,63 @@
 						return results;
 					}
 				}
-				var categories = {}; 
-				var categoryArray = [];
-				// build the categories and categoryArray 
-				$.each(selected,function(_,e){
-					var cat = getCategory(e);
-					if (categories[cat] === undefined)
-					{
-						categories[cat] = [];
-						categoryArray.push(cat);
-					}
-					if (categories[cat].indexOf(e) < 0)
-						categories[cat].push(e);
-				});
-				// build our selector as array of groups
-				var selectors = buildSelector(categories, categoryArray, 0);
-				// join all selector groups to get the string form
-				console.log(selectors.join(","));
-				// Finally the Selector list is here:
-				var xclass = selectors.join(",");
 				
-				// End of functions to get the selctor of filters
-				////////////////////////////////////////////////////////
+				// Check if the last filter has been deselected (no filters selected
+				if (selected.length > 0) {
+					var categories = {}; 
+					var categoryArray = [];
+					// build the categories and categoryArray 
+					$.each(selected,function(_,e){
+						var cat = getCategory(e);
+						if (categories[cat] === undefined)
+						{
+							categories[cat] = [];
+							categoryArray.push(cat);
+						}
+						if (categories[cat].indexOf(e) < 0)
+							categories[cat].push(e);
+					});
+					// build our selector as array of groups
+					var selectors = buildSelector(categories, categoryArray, 0);
+					// join all selector groups to get the string form
+					//console.log(selectors.join(","));
+					// Finally the Selector list is here:
+					var xclass = selectors.join(",");
 				
-				////////////////////////////////////////////////////////
-				//
-				// FIXME:
-				// HERE WE NEED TO IMPLEMENT THE RECOUNTING OF VISIBLE 
-				// ITEMS AND ADD THEM LIVE TO THE <SPAN> OF FILTERS
-				//
-				//  (the number needs a specific class name to be 
-				//  accessible easily)
-				//
-				///////////////////////////////////////////////////////
-				
-				
-				var myclass = this.className.substring(8);
-				$('#myTable tr').hide();
-				$('#myTable tr:first').show();
-				$('#myTable tr'+xclass).show("slow");
+					// End of functions to get the selctor of filters
+					////////////////////////////////////////////////////////
+					
+					////////////////////////////////////////////////////////
+					//
+					// FIXME:
+					// HERE WE NEED TO IMPLEMENT THE RECOUNTING OF VISIBLE 
+					// ITEMS AND ADD THEM LIVE TO THE <SPAN> OF FILTERS
+					//
+					//  (the number needs a specific class name to be 
+					//  accessible easily)
+					//
+					///////////////////////////////////////////////////////
+					
+					$('#myTable tr').hide();
+					$('#myTable tr:first').show();
+					$('#myTable tr'+xclass).show("slow");
 
+					
+				} else {
+					// if last filter is deselected, then show all the items
+					$('#myTable tr').show();
+				}
+
+				// Toggle filter buttons class
+				var myclass = this.className.substring(8);
 				myblue = $('input.'+myclass).parent('span');
 				if ($(this).is(':checked')) {
 					myblue.addClass('btn-primary');						
 				} else {
 					myblue.removeClass('btn-primary');
 				}
-				
+
+				// Count items when the table is ready build
 				$('#myTable tr'+selected_str).promise().done(function(){
 					count();
 				});
@@ -193,9 +202,25 @@
 					$('input').prop('checked', true);
 				});
 			});
-		});
-		$('#showhidefilters').click(function() {
-			$('#filters').toggle("slow");
+
+			$('#showhidefilters').click(function() {
+					//  get the width in %
+					var width = $('#tablecontainer').width();
+					var parentWidth = $('#tablecontainer').offsetParent().width();
+					var percent = 100*width/parentWidth;
+					
+					if (Math.floor(percent) == 95) {
+						$("#tablecontainer").css("width", "");
+						$('#tablecontainer').promise().done(function(){
+							$('#sidebar').show("slow");
+						});
+					} else {
+						$('#sidebar').hide("slow");
+						$('#sidebar').promise().done(function(){
+							$("#tablecontainer").css("width", "95%");
+						});
+					}
+			});
 		});
         </script>
 
@@ -241,7 +266,6 @@
 	<div class="container">
 		<!-- Main hero unit for a primary marketing message or call to action -->
 		<div style="position:relative;">
-			
 			<div id="right">
 				<p> Showing</p>
 				<div id="countercontainer">
@@ -253,10 +277,10 @@
 			</div>	
 		</div>
 		<p><img src="http://jmlr.org/jmlr.jpg" width="120px" /></p>
-		<p><a href="#" id="showhidefilters" class="btn btn-primary">show/hide filters</a></p>
-		<div class="hero-unit"  data-spy="affix" style="position:relative;float:left;width:15%;">
+		<p><a id="showhidefilters" class="btn btn-primary">show/hide sidebar</a></p>
+		<div class="hero-unit" id="sidebar" data-spy="affix" style="position:relative;float:left;width:15%;">
 		<p>Filter papers by:</p>
-		<p id="myp"><a href="#" id="showall" class="btn btn-primary"/>show all</a></p>
+		<p id="myp"><a id="showall" class="btn btn-primary"/>show/check all</a></p>
 		<div id="filters">
 		</div>
 		</div>

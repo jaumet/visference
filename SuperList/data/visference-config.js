@@ -13,71 +13,79 @@
 // FIELDS -> This variable is only used by AREA. 
 //    It defines the machine name the human name and whether each paramater 
 //    is eligible for filtering.
+// ROLE DEFINITIONS:
+// 		"table" -> only SuperList as a column in the table
+// 		"category" -> only SuperList as a category in left column
+//		"subcategory" -> only SuperList as a subcategory in left column
+// 		"area" -> only as AREA field
+// 		"table-area" -> SuperList as a column in the table + AREA parameter
+// 		"category-area" -> SuperList as a category in left column + AREA parameter
 // 
 // FILTERS -> this variable is used only for Superlist.
 //    It defines the machine names for each category
 
-
 var FIELDS = [
 	{
 		"id": 
-			{ human: "My ID", filter: "0"},
+			{ human: "My ID", areafilter: "0", role:"table"},
 		"title": 
-			{ human: "My Title", filter: "1"},
-		"topic1": 
-			{ human: "My Topic 1", filter: "0"},
+			{ human: "My Title", areafilter: "1", role:"table-area"},
+		"authors": 
+			{ human: "Authors", areafilter: "1", role:"table-area"},
+		"topic1":
+			{ human: "My Topic 1", areafilter: "0", role:"table-area"},
 		"topic2": 
-			{ human: "My Topic 2", filter: "1"},
+			{ human: "My Topic 2", areafilter: "1", role:"table-area"},
 		"topic3": 
-			{ human: "My Topic 3", filter: "1"},
+			{ human: "My Topic 3", areafilter: "1", role:"table-area"},
 		"topic4": 
-			{ human: "My Topic 4", filter: "1"},
+			{ human: "My Topic 4", areafilter: "1", role:"table-area"},
 		"topic5": 
-			{ human: "My Topic 5", filter: "1"},
+			{ human: "My Topic 5", areafilter: "1", role:"table-area"},
 		"axis1": 
-			{ human: "My axis 1", filter: "1"},
+			{ human: "My axis 1", areafilter: "1", role:"category-area"},
 		"a1": 
-			{ human: "My A1", filter: "0"},
+			{ human: "My A1", areafilter: "0", role:"subcategory"},
 		"a2": 
-			{ human: "My A2", filter: "0"},
+			{ human: "My A2", areafilter: "0", role:"subcategory"},
 		"axis2": 
-			{ human: "My axis 2", filter: "1"},
+			{ human: "My axis 2", areafilter: "1", role:"category-area"},
 		"b1": 
-			{ human: "My B1", filter: "0"},
+			{ human: "My B1", areafilter: "0", role:"subcategory"},
 		"b2": 
-			{ human: "My B2", filter: "0"},
+			{ human: "My B2", areafilter: "0", role:"subcategory"},
 		"b3": 
-			{ human: "My B3", filter: "0"},
+			{ human: "My B3", areafilter: "0", role:"subcategory"},
 		"axis3": 
-			{ human: "My axis 3", filter: "1"},
+			{ human: "My axis 3", areafilter: "1", role:"category-area"},
 		"c1": 
-			{ human: "My C1", filter: "0"},
+			{ human: "My C1", areafilter: "0", role:"subcategory"},
 		"c2": 
-			{ human: "My C2", filter: "0"},
+			{ human: "My C2", areafilter: "0", role:"subcategory"},
 		"axis4": 
-			{ human: "My axis 4", filter: "1"},
+			{ human: "My axis 4", areafilter: "1", role:"category-area"},
 		"d1": 
-			{ human: "My D1", filter: "0"},
+			{ human: "My D1", areafilter: "0", role:"subcategory"},
 		"d2": 
-			{ human: "My D2", filter: "0"},
+			{ human: "My D2", areafilter: "0", role:"subcategory"},
 		"d3": 
-			{ human: "My D3", filter: "0"},
+			{ human: "My D3", areafilter: "0", role:"subcategory"},
 		"axis5": 
-			{ human: "My axis 5", filter: "1"},
+			{ human: "My axis 5", areafilter: "1", role:"category-area"},
 		"e1": 
-			{ human: "My E1", filter: "0"},
+			{ human: "My E1", areafilter: "0", role:"subcategory"},
 		"e2": 
-			{ human: "My E2", filter: "0"},
+			{ human: "My E2", areafilter: "0", role:"subcategory"},
 		"e3": 
-			{ human: "My E3", filter: "0"},
+			{ human: "My E3", areafilter: "0", role:"subcategory"},
 		"e4": 
-			{ human: "My E4", filter: "0"},
+			{ human: "My E4", areafilter: "0", role:"subcategory"},
 		"e5": 
-			{ human: "My E5", filter: "0"}
+			{ human: "My E5", areafilter: "0", role:"subcategory"}
 	}
 ];
 
-var SUPERLIST_FIELDS = [
+var SUPERLIST_CATEGORIES = [
 	{
 	"axisname": 
 		"axis1",
@@ -134,7 +142,12 @@ var SUPERLIST_FIELDS = [
 
 var DATA = [
 	{
-		"id": "0","title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities","topic1": 90,"topic2": 0,	"topic3": 0,
+		"id": "0",
+		"title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities Learning from Multiple Inequalities",
+		"authors": "jaumet nualart",
+		"topic1": 90,
+		"topic2": 0,
+		"topic3": 0,
 		"topic4": 70,
 		"topic5": 30,
 		"axis1": "a1",
@@ -146,6 +159,7 @@ var DATA = [
 	{
 		"id": "1",
 		"title": "An Adaptive Learning Rate for Stochastic Variational Inference",
+		"authors": "jaumet",
 		"topic1": 0,
 		"topic2": 20,	
 		"topic3": 20,
@@ -159,8 +173,7 @@ var DATA = [
 	},
 	{
 		"id": "2",
-		"title": "bla bla bla tochastic Variational Inference",
-		"topic1": 90,
+		"title": "bla bla bla tochastic Variational Inference","authors": "jaumet","topic1": 90,
 		"topic2": 90,	
 		"topic3": 0,
 		"topic4": 10,
@@ -173,8 +186,7 @@ var DATA = [
 	},
 	{
 		"id": "3",
-		"title": "trala ra la te llekhe ra la te llekhe ra la te llekhe ",
-		"topic1": 90,
+		"title": "trala ra la te llekhe ra la te llekhe ra la te llekhe ","authors": "jaumet","topic1": 90,
 		"topic2": 90,	
 		"topic3": 90,
 		"topic4": 100,
@@ -187,8 +199,7 @@ var DATA = [
 	},
 	{
 		"id": "4",
-		"title": "GyIhiuhi  UguyguygUuy bu yIhiuhi  UguyguygUuy bu ",
-		"topic1": 50,
+		"title": "GyIhiuhi  UguyguygUuy bu yIhiuhi  UguyguygUuy bu ","authors": "jaumet","topic1": 50,
 		"topic2": 70,	
 		"topic3": 30,
 		"topic4": 70,
@@ -201,8 +212,7 @@ var DATA = [
 	},
 	{
 		"id": "5",
-		"title": "Hui iheuhriug rwrwiuth ttotv euhriug rwrwiuth ttotv ",
-		"topic1": 0,
+		"title": "Hui iheuhriug rwrwiuth ttotv euhriug rwrwiuth ttotv ","authors": "jaumet","topic1": 0,
 		"topic2": 0,	
 		"topic3": 20,
 		"topic4": 10,
@@ -215,8 +225,7 @@ var DATA = [
 	},
 	{
 		"id": "6",
-		"title": "Oplpjih UYguyG yug yu iu  UYguyG yug yu iu  UYguyG yug yu iu ",
-		"topic1": 30,
+		"title": "Oplpjih UYguyG yug yu iu  UYguyG yug yu iu  UYguyG yug yu iu ","authors": "jaumet","topic1": 30,
 		"topic2": 30,	
 		"topic3": 100,
 		"topic4": 50,
@@ -228,9 +237,8 @@ var DATA = [
 		"axis5": "e5"
 	},
 		{
-		"id": "0",
-		"title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities",
-		"topic1": 90,
+		"id": "7",
+		"title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities","authors": "jaumet","topic1": 90,
 		"topic2": 0,	
 		"topic3": 0,
 		"topic4": 70,
@@ -242,9 +250,8 @@ var DATA = [
 		"axis5": "e1"
 	},
 	{
-		"id": "1",
-		"title": "An Adaptive Learning Rate for Stochastic Variational Inference",
-		"topic1": 0,
+		"id": "8",
+		"title": "An Adaptive Learning Rate for Stochastic Variational Inference","authors": "jaumet","topic1": 0,
 		"topic2": 20,	
 		"topic3": 20,
 		"topic4": 100,
@@ -256,9 +263,8 @@ var DATA = [
 		"axis5": "e2"
 	},
 	{
-		"id": "2",
-		"title": "bla bla bla tochastic Variational Inference",
-		"topic1": 90,
+		"id": "9",
+		"title": "bla bla bla tochastic Variational Inference","authors": "jaumet","topic1": 90,
 		"topic2": 90,	
 		"topic3": 0,
 		"topic4": 10,
@@ -270,9 +276,8 @@ var DATA = [
 		"axis5": "e3"
 	},
 	{
-		"id": "3",
-		"title": "trala ra la te llekhe ra la te llekhe ra la te llekhe ",
-		"topic1": 90,
+		"id": "10",
+		"title": "trala ra la te llekhe ra la te llekhe ra la te llekhe ","authors": "jaumet","topic1": 90,
 		"topic2": 90,	
 		"topic3": 90,
 		"topic4": 100,
@@ -284,9 +289,8 @@ var DATA = [
 		"axis5": "e4"
 	},
 	{
-		"id": "4",
-		"title": "GyIhiuhi  UguyguygUuy bu yIhiuhi  UguyguygUuy bu ",
-		"topic1": 50,
+		"id": "11",
+		"title": "GyIhiuhi  UguyguygUuy bu yIhiuhi  UguyguygUuy bu ","authors": "jaumet","topic1": 50,
 		"topic2": 70,	
 		"topic3": 30,
 		"topic4": 70,
@@ -298,9 +302,8 @@ var DATA = [
 		"axis5": "e5"
 	},
 	{
-		"id": "5",
-		"title": "Hui iheuhriug rwrwiuth ttotv euhriug rwrwiuth ttotv ",
-		"topic1": 0,
+		"id": "12",
+		"title": "Hui iheuhriug rwrwiuth ttotv euhriug rwrwiuth ttotv ","authors": "jaumet","topic1": 0,
 		"topic2": 0,	
 		"topic3": 20,
 		"topic4": 10,
@@ -312,9 +315,8 @@ var DATA = [
 		"axis5": "e4"
 	},
 	{
-		"id": "6",
-		"title": "Oplpjih UYguyG yug yu iu  UYguyG yug yu iu  UYguyG yug yu iu ",
-		"topic1": 30,
+		"id": "13",
+		"title": "Oplpjih UYguyG yug yu iu  UYguyG yug yu iu  UYguyG yug yu iu ","authors": "jaumet","topic1": 30,
 		"topic2": 30,	
 		"topic3": 100,
 		"topic4": 50,
@@ -326,9 +328,8 @@ var DATA = [
 		"axis5": "e5"
 	},
 		{
-		"id": "0",
-		"title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities",
-		"topic1": 90,
+		"id": "14",
+		"title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities","authors": "jaumet","topic1": 90,
 		"topic2": 0,	
 		"topic3": 0,
 		"topic4": 70,
@@ -340,9 +341,8 @@ var DATA = [
 		"axis5": "e1"
 	},
 	{
-		"id": "1",
-		"title": "An Adaptive Learning Rate for Stochastic Variational Inference",
-		"topic1": 0,
+		"id": "15",
+		"title": "An Adaptive Learning Rate for Stochastic Variational Inference","authors": "jaumet","topic1": 0,
 		"topic2": 20,	
 		"topic3": 20,
 		"topic4": 100,
@@ -354,9 +354,8 @@ var DATA = [
 		"axis5": "e2"
 	},
 	{
-		"id": "2",
-		"title": "bla bla bla tochastic Variational Inference",
-		"topic1": 90,
+		"id": "16",
+		"title": "bla bla bla tochastic Variational Inference","authors": "jaumet","topic1": 90,
 		"topic2": 90,	
 		"topic3": 0,
 		"topic4": 10,
@@ -368,9 +367,8 @@ var DATA = [
 		"axis5": "e3"
 	},
 	{
-		"id": "3",
-		"title": "trala ra la te llekhe ra la te llekhe ra la te llekhe ",
-		"topic1": 90,
+		"id": "17",
+		"title": "trala ra la te llekhe ra la te llekhe ra la te llekhe ","authors": "jaumet","topic1": 90,
 		"topic2": 90,	
 		"topic3": 90,
 		"topic4": 100,
@@ -382,9 +380,8 @@ var DATA = [
 		"axis5": "e4"
 	},
 	{
-		"id": "4",
-		"title": "GyIhiuhi  UguyguygUuy bu yIhiuhi  UguyguygUuy bu ",
-		"topic1": 50,
+		"id": "18",
+		"title": "GyIhiuhi  UguyguygUuy bu yIhiuhi  UguyguygUuy bu ","authors": "jaumet","topic1": 50,
 		"topic2": 70,	
 		"topic3": 30,
 		"topic4": 70,
@@ -396,9 +393,8 @@ var DATA = [
 		"axis5": "e5"
 	},
 	{
-		"id": "5",
-		"title": "Hui iheuhriug rwrwiuth ttotv euhriug rwrwiuth ttotv ",
-		"topic1": 0,
+		"id": "19",
+		"title": "Hui iheuhriug rwrwiuth ttotv euhriug rwrwiuth ttotv ","authors": "jaumet","topic1": 0,
 		"topic2": 0,	
 		"topic3": 20,
 		"topic4": 10,
@@ -410,9 +406,8 @@ var DATA = [
 		"axis5": "e4"
 	},
 	{
-		"id": "6",
-		"title": "Oplpjih UYguyG yug yu iu  UYguyG yug yu iu  UYguyG yug yu iu ",
-		"topic1": 30,
+		"id": "20",
+		"title": "Oplpjih UYguyG yug yu iu  UYguyG yug yu iu  UYguyG yug yu iu ","authors": "jaumet","topic1": 30,
 		"topic2": 30,	
 		"topic3": 100,
 		"topic4": 50,
@@ -424,9 +419,8 @@ var DATA = [
 		"axis5": "e5"
 	},
 		{
-		"id": "0",
-		"title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities",
-		"topic1": 90,
+		"id": "21",
+		"title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities","authors": "jaumet","topic1": 90,
 		"topic2": 0,	
 		"topic3": 0,
 		"topic4": 70,
@@ -438,9 +432,8 @@ var DATA = [
 		"axis5": "e1"
 	},
 	{
-		"id": "1",
-		"title": "An Adaptive Learning Rate for Stochastic Variational Inference",
-		"topic1": 20,
+		"id": "22",
+		"title": "An Adaptive Learning Rate for Stochastic Variational Inference","authors": "jaumet","topic1": 20,
 		"topic2": 10,	
 		"topic3": 50,
 		"topic4": 60,
@@ -452,9 +445,8 @@ var DATA = [
 		"axis5": "e2"
 	},
 	{
-		"id": "2",
-		"title": "bla bla bla tochastic Variational Inference",
-		"topic1": 20,
+		"id": "23",
+		"title": "bla bla bla tochastic Variational Inference","authors": "jaumet","topic1": 20,
 		"topic2": 30,	
 		"topic3": 70,
 		"topic4": 50,
@@ -466,9 +458,8 @@ var DATA = [
 		"axis5": "e3"
 	},
 	{
-		"id": "3",
-		"title": "trala ra la te llekhe ra la te llekhe ra la te llekhe ",
-		"topic1": 30,
+		"id": "24",
+		"title": "trala ra la te llekhe ra la te llekhe ra la te llekhe ","authors": "jaumet","topic1": 30,
 		"topic2": 30,	
 		"topic3": 30,
 		"topic4": 30,
@@ -480,9 +471,8 @@ var DATA = [
 		"axis5": "e4"
 	},
 	{
-		"id": "4",
-		"title": "GyIhiuhi  UguyguygUuy bu yIhiuhi  UguyguygUuy bu ",
-		"topic1": 30,
+		"id": "25",
+		"title": "GyIhiuhi  UguyguygUuy bu yIhiuhi  UguyguygUuy bu ","authors": "jaumet","topic1": 30,
 		"topic2": 40,	
 		"topic3": 60,
 		"topic4": 10,
@@ -494,9 +484,8 @@ var DATA = [
 		"axis5": "e5"
 	},
 	{
-		"id": "5",
-		"title": "Hui iheuhriug rwrwiuth ttotv euhriug rwrwiuth ttotv ",
-		"topic1": 20,
+		"id": "26",
+		"title": "Hui iheuhriug rwrwiuth ttotv euhriug rwrwiuth ttotv ","authors": "jaumet","topic1": 20,
 		"topic2": 20,	
 		"topic3": 20,
 		"topic4": 20,
@@ -508,9 +497,8 @@ var DATA = [
 		"axis5": "e4"
 	},
 	{
-		"id": "6",
-		"title": "Oplpjih UYguyG yug yu iu  UYguyG yug yu iu  UYguyG yug yu iu ",
-		"topic1": 10,
+		"id": "27",
+		"title": "Oplpjih UYguyG yug yu iu  UYguyG yug yu iu  UYguyG yug yu iu ","authors": "jaumet","topic1": 10,
 		"topic2": 10,	
 		"topic3": 10,
 		"topic4": 10,
@@ -522,9 +510,8 @@ var DATA = [
 		"axis5": "e5"
 	},
 		{
-		"id": "0",
-		"title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities",
-		"topic1": 80,
+		"id": "28",
+		"title": "Thurstonian B oltzmann Machines: Learning from Multiple Inequalities","authors": "jaumet","topic1": 80,
 		"topic2": 90,	
 		"topic3": 90,
 		"topic4": 90,
@@ -536,9 +523,8 @@ var DATA = [
 		"axis5": "e1"
 	},
 	{
-		"id": "1",
-		"title": "An Adaptive Learning Rate for Stochastic Variational Inference",
-		"topic1": 60,
+		"id": "29",
+		"title": "An Adaptive Learning Rate for Stochastic Variational Inference","authors": "jaumet","topic1": 60,
 		"topic2": 20,	
 		"topic3": 30,
 		"topic4": 40,
@@ -550,9 +536,8 @@ var DATA = [
 		"axis5": "e2"
 	},
 	{
-		"id": "2",
-		"title": "bla bla bla tochastic Variational Inference",
-		"topic1": 50,
+		"id": "30",
+		"title": "bla bla bla tochastic Variational Inference","authors": "jaumet","topic1": 50,
 		"topic2": 50,	
 		"topic3": 25,
 		"topic4": 10,
@@ -564,9 +549,8 @@ var DATA = [
 		"axis5": "e3"
 	},
 	{
-		"id": "3",
-		"title": "trala ra la te llekhe ra la te llekhe ra la te llekhe ",
-		"topic1": 30,
+		"id": "31",
+		"title": "trala ra la te llekhe ra la te llekhe ra la te llekhe ","authors": "jaumet","topic1": 30,
 		"topic2": 40,	
 		"topic3": 50,
 		"topic4": 60,
@@ -578,9 +562,8 @@ var DATA = [
 		"axis5": "e4"
 	},
 	{
-		"id": "4",
-		"title": "GyIhiuhi  UguyguygUuy bu yIhiuhi  UguyguygUuy bu ",
-		"topic1": 50,
+		"id": "32",
+		"title": "GyIhiuhi  UguyguygUuy bu yIhiuhi  UguyguygUuy bu ","authors": "jaumet","topic1": 50,
 		"topic2": 70,	
 		"topic3": 30,
 		"topic4": 70,
@@ -592,8 +575,9 @@ var DATA = [
 		"axis5": "e5"
 	},
 	{
-		"id": "5",
+		"id": "33",
 		"title": "Hui iheuhriug rwrwiuth ttotv euhriug rwrwiuth ttotv ",
+		"authors": "jaumet",
 		"topic1": 0,
 		"topic2": 0,	
 		"topic3": 20,
@@ -606,9 +590,8 @@ var DATA = [
 		"axis5": "e4"
 	},
 	{
-		"id": "6",
-		"title": "Oplpjih UYguyG yug yu iu  UYguyG yug yu iu  UYguyG yug yu iu ",
-		"topic1": 30,
+		"id": "34",
+		"title": "Oplpjih UYguyG yug yu iu  UYguyG yug yu iu  UYguyG yug yu iu ","authors": "jaumet","topic1": 30,
 		"topic2": 30,	
 		"topic3": 100,
 		"topic4": 50,

@@ -82,13 +82,16 @@ body {
 #tablecontainer {
 	position:relative;
 	float:left;
-	width:70%;
-	padding-left:30px;
+	width:80%;
+	padding-left:10px;
+}
+.widetable {
+	width:100%;
 }
 td {
   text-align:center;
 }
-.tatbletitle {
+.tabletitle {
    text-align:left;
 }
 .hero-unit {
