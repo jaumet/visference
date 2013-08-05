@@ -7,7 +7,6 @@
         <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
         <script src="js/jquery.tablesorter.js"></script>
 		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-		<link href="./css/style.css" rel="stylesheet">
         <script type="text/javascript" src="data/visference-config.js"></script>
         <script>
         $(document).ready(function() {
@@ -209,15 +208,15 @@
 					var parentWidth = $('#tablecontainer').offsetParent().width();
 					var percent = 100*width/parentWidth;
 					
-					if (Math.floor(percent) == 95) {
+					if (Math.floor(percent) > 90) {
 						$("#tablecontainer").css("width", "");
 						$('#tablecontainer').promise().done(function(){
 							$('#sidebar').show("slow");
 						});
 					} else {
-						$('#sidebar').hide("slow");
+						$('#sidebar').hide();
 						$('#sidebar').promise().done(function(){
-							$("#tablecontainer").css("width", "95%");
+							$("#tablecontainer").animate({"width": "100%"}, "slow");
 						});
 					}
 			});
@@ -263,7 +262,7 @@
 		</div>
 	</div>
 	
-	<div class="container">
+	<div class="mycontainer">
 		<!-- Main hero unit for a primary marketing message or call to action -->
 		<div style="position:relative;">
 			<div id="right">
