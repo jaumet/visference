@@ -29,8 +29,11 @@
 			var it = ''; var circle;var nclass='';
 			$.each(DATA, function(key1, val1) {
 				$.each(val1, function(key, val) {
-					if (key == "title" || key == "id" || key == "authors") {
+					if (key == "title" || key == "id" || key == "author") {
 						circle = val;
+					}
+					else if (key == "url") {
+						circle = "<a href=\""+val+"\">pdf</a>";
 					}
 					else if (key.substring(0,4) === "axis") {
 						nclass = nclass + ' ' + val;
