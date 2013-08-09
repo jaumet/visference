@@ -70,7 +70,7 @@ function prepare_divs() {
 	$('#bad').empty();
 	$("#area").empty();
 	$('#area').css("width",0);
-	//$('#filtered_params').empty();
+	$('#filtered_params').empty();
 }
 
 //////////////////////////////////////////////

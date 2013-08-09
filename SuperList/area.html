@@ -4,10 +4,14 @@
     <title>AREA</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/d3.v2.min.js"></script>
-	<script type="text/javascript" src="data/visference-config.js"></script>
-	<link href="css/area.css" rel="stylesheet">
+	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	<script type="text/javascript" src="./data/visference-config.js"></script>
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/area.css" rel="stylesheet">
   </head>
   <body>
+	<script src="js/html-include-bootstrap.js"></script>
   	<div id="panel">
 		<div id="title">
 			<p syle="padding:0;margin:0;">AREA: explore data at a glance</p>
@@ -84,7 +88,7 @@
 		<div id="node_info_data"></div>
 	</div>
 	
-	<script type="text/javascript" src="js/area_functions.js"></script>
+    <script type="text/javascript" src="./js/area_functions.js"></script>
     <script type="text/javascript">
 		
 		///////////////////////////////
@@ -96,8 +100,9 @@
 			if ($('#filtered_params input').length == 0) {
 				var filter_params_list = 'Check parameters to filter:<br />';
 				$.each(FIELDS[0], function(i, el) {
-					if (el.filter == 1) {
-						filter_params_list += '<input type="checkbox" checked name="'+i+'" value="'+i+'">'+el.human+'&nbsp;&nbsp;';	
+					console.log("list params: "+FIELDS[0].el);
+					if (el.areafilter == 1) {
+						filter_params_list += '<span><input type="checkbox" checked name="'+i+'" value="'+i+'">'+el.human+'</span>&nbsp;&nbsp;';	
 					}
 				});		
 				$('#filtered_params').append(filter_params_list);
@@ -260,7 +265,7 @@
 			///////////////////////
 			// MATRIX REPRESENTATION
 
-			// FIXME  Keep colors whn change param1, config or filter
+			// FIXME  Keep colors when change param1, config or filter
 			 
 			// Prepare colors for PARAM2 values:
 			var param2colors = [];
@@ -332,10 +337,10 @@
 			c_a = $("#colors_approach option:selected").val();
 			fltr = $("#filter").val();
 			
-			if (p1 != 'select' || p2 != 'select') {
+			//if (p1 != 'select' || p2 != 'select') {
 				prepare_divs();
 				do_area(p1, p2, ax, ay, c_a, fltr);
-			}
+			//}
 		});
 
 		$('#tab3').on('mouseenter', function(){
