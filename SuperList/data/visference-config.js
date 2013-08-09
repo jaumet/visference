@@ -24,6 +24,26 @@
 // FILTERS -> this variable is used only for Superlist.
 //    It defines the machine names for each category
 
+
+///////////////////////////////////////////////////////////////////
+// AREA CONFIGURATION
+//
+	var MAX_DISTINC = 20;
+	var AREAX = 800;
+	var AREAY = 600;
+	var COLORS_APPROACH = "random"; // fix, random, gradient
+	var PARAM1 = "topic1";
+	var PARAM2 = "topic3";
+	var AREA_TITLE = "";
+
+///////////////////////////////////////////////////////////////////
+// FIELDS CONFIGURATIONS:
+//
+// -> the index are the machine-names for each field (only alphanumeric characters)/ Also used in var DATA
+// -> human : human name for the field
+// -> filter: 0 no eligible for filtering | 1 eligible for filtering
+//
+
 var FIELDS = [
 	{
 		"id": 
