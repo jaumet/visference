@@ -71,6 +71,7 @@ function prepare_divs() {
 	$("#area").empty();
 	$('#area').css("width",0);
 	$('#filtered_params').empty();
+	$("#node_info").css("display", "none");
 }
 
 //////////////////////////////////////////////

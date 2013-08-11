@@ -92,6 +92,7 @@ body {
 }
 td {
   text-align:center;
+  min-width:60px;
 }
 .tabletitle {
    text-align:left;
