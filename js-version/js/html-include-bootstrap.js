@@ -12,6 +12,7 @@ document.write("<div class=\"navbar navbar-inverse navbar-fixed-top\">\
 						<li class=\"active\"><a href=\"http://jmlr.org/\">Home</a></li>\
 						<li class=\"active\"><a href=\"index.html\">Papers list</a></li>\
 						<li class=\"active\"><a href=\"area.html\">Papers overview</a></li>\
+                                                <li class=\"active\"><a href=\"http://jmlr.org/proceedings/papers/v28/\">Simple list</a></li>\
 						<li class=\"active dropdown\">\
 							<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">JMLR Menu<b class=\"caret\"></b></a>\
 							<ul class=\"dropdown-menu\">\

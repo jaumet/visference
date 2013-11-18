@@ -37,7 +37,7 @@
 	var AREA_TITLE = "";
 
 ///////////////////////////////////////////////////////////////////
-// FIELDS CONFIGURATIONS:
+// FIELDS CONFIGURATION:
 //
 // -> the index are the machine-names for each field (only alphanumeric characters)/ Also used in var DATA
 // -> human : human name for the field
@@ -53,29 +53,29 @@ var FIELDS = [
 		"author": 
 			{ human: "Authors", areafilter: "1", role:"table-area"},
 		"url": 
-			{ human: "PDF", areafilter: "1", role:"table-area"},
+			{ human: "PDF<br />Abs", areafilter: "1", role:"table-area"},
                 "Identifier":
 			{ human: "Identifier", areafilter: "1", role:"hide"},
-                "topic1": 
-			{ human: "Matrix Issues", areafilter: "1", role:"table-area"},
-		"topic2": 
-			{ human: "Policies and Games", areafilter: "1", role:"table-area"},
+                "topic1":
+			{ human: "SVNs and Kernels", areafilter: "0", role:"table-area"},
+                "topic2": 
+			{ human: "Theory", areafilter: "1", role:"table-area"},
 		"topic3": 
-			{ human: "Images and Neural Network", areafilter: "1", role:"table-area"},
+			{ human: "Policies and Games", areafilter: "1", role:"table-area"},
 		"topic4": 
+			{ human: "Images and Neural Network", areafilter: "1", role:"table-area"},
+		"topic5": 
 			{ human: "Experiments", areafilter: "1", role:"table-area"},
-                "topic5": 
-			{ human: "Definitions", areafilter: "1", role:"table-area"},
                 "topic6": 
-			{ human: "Optimisation", areafilter: "1", role:"table-area"},
+			{ human: "Definitions", areafilter: "1", role:"table-area"},
                 "topic7": 
-			{ human: "Probabilistic Models", areafilter: "1", role:"table-area"},
+			{ human: "Optimisation", areafilter: "1", role:"table-area"},
                 "topic8": 
-			{ human: "Discussion", areafilter: "1", role:"table-area"},
+			{ human: "Probabilistic Models", areafilter: "1", role:"table-area"},
                 "topic9": 
+			{ human: "Discussion", areafilter: "1", role:"table-area"},
+                "topic10": 
 			{ human: "Topic and Latent Variable Models", areafilter: "1", role:"table-area"},
-		"topic10":
-			{ human: "Theory", areafilter: "0", role:"table-area"},
 		"axis1": 
 			{ human: "My axis 1", areafilter: "1", role:"category-area"},
 		"a1": 
@@ -121,18 +121,16 @@ var FIELDS = [
 
 var SUPERLIST_CATEGORIES = [
 	{
-	"axisname": 
-		"axis1",
-		"values" : 
+	"axisname":"axis1",
+		   "values" : 
 			[
 				{"code": "a1"},
 				{"code": "a2"}
 			]
 	},
 	{
-	"axisname":
-		"axis2",
-		"values" : 
+	"axisname":"axis2",
+		   "values" : 
 			[
 				{"code": "b1"},
 				{"code": "b2"},
@@ -140,18 +138,16 @@ var SUPERLIST_CATEGORIES = [
 			]
 	},
 	{
-	"axisname": 
-		"axis3",
-		"values" : 
+	"axisname":"axis3",
+		   "values" : 
 			[
 				{"code": "c1"},
 				{"code": "c2"}
 	   		]
 	},
 	{
-	"axisname":
-		"axis4",
-		"values" : 
+	"axisname":"axis4",
+                   "values" : 
 			[
 				{"code": "d1"},
 				{"code": "d2"},
@@ -159,9 +155,8 @@ var SUPERLIST_CATEGORIES = [
 			]
 	},
 	{
-	"axisname":
-		"axis5",
-		"values" : 
+	"axisname":"axis5",
+		   "values" : 
 			[
 				{"code": "e1"},
 				{"code": "e2"},

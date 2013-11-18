@@ -6,6 +6,7 @@
 	<script type="text/javascript" src="js/d3.v2.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <script type="text/javascript" src="./data/myData.js"></script>
 	<script type="text/javascript" src="./data/visference-config.js"></script>
 	<link href="./css/style.css" rel="stylesheet">
 	<link href="./css/area.css" rel="stylesheet">
@@ -100,7 +101,7 @@
 			if ($('#filtered_params input').length == 0) {
 				var filter_params_list = 'Check parameters to filter:<br />';
 				$.each(FIELDS[0], function(i, el) {
-					console.log("list params: "+FIELDS[0].el);
+                                        //console.log("list params: "+FIELDS[0].el);
 					if (el.areafilter == 1) {
 						filter_params_list += '<span><input type="checkbox" checked name="'+i+'" value="'+i+'">'+el.human+'</span>&nbsp;&nbsp;';	
 					}
@@ -197,6 +198,7 @@
 				var nodey = Math.floor(blocky/dim_node);
 					
 				// creating a d3 canvas per block
+                                //console.log("xxx"+param_val1);
 				areaSVG = d3.select('#b-'+param_val1)
 					.append("svg:svg")
 					.attr("width", blockx)

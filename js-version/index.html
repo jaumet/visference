@@ -8,6 +8,7 @@
 	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <script src="js/jquery.tablesorter.js"></script>
         <script type="text/javascript" src="data/visference-config.js"></script>
+        <script type="text/javascript" src="data/myData.js"></script>
         <script>
         $(document).ready(function() {
         	function count(){
@@ -29,11 +30,11 @@
 			var it = ''; var circle;var nclass='';
 			$.each(DATA, function(key1, val1) {
 				$.each(val1, function(key, val) {
-					if (key == "title" || key == "id" || key == "author") {
+					if (key == "title" || key == "id" || key == "author" ) {
 						circle = val;
 					}
-					else if (key == "url") {
-						circle = "<a href=\""+val+"\">pdf</a>";
+					else if (key == "Identifier") {
+						circle = "<a href=\"http://jmlr.org/proceedings/papers/v28/"+val+".pdf\" target=\""+val+"_pdf\">pdf</a><br /> <a href=\"http://jmlr.org/proceedings/papers/v28/"+val+".html\" target=\""+val+"_abs\">abs</a>";
 					}
 					else if (key.substring(0,4) === "axis") {
 						nclass = nclass + ' ' + val;
@@ -41,7 +42,7 @@
 					else if (key.substring(0,5) === "topic") {
 						circle = '<span class="circle" style="color:transparent;height:'+(val/4)+'px;width:'+(val/4)+'px;">'+val+'</span>';
 					}
-					if (key.substring(0,4) !== "axis") {
+					if (key.substring(0,4) !== "axis" ) {
 						it = it +'<td>' + circle + '</td>';
 						nclass = ''; 
 					}
@@ -55,7 +56,7 @@
 				html: items.join('')
 			}).appendTo('#list');
 			$("#myTable").tablesorter({ 
-				sortList: [[0,0]]
+				sortList: [[0,0]], sortInitialOrder: "desc"
 			});
 			count();
 			// Align left the columns Title and Authors:
@@ -154,12 +155,12 @@
 					});
 					// build our selector as array of groups
 					var selectors = buildSelector(categories, categoryArray, 0);
-					// join all selector groups to get the string form
-					//console.log(selectors.join(","));
+					// join all selector groups to get an string
+
 					// Finally the Selector list is here:
 					var xclass = selectors.join(",");
 				
-					// End of functions to get the selctor of filters
+					// End of functions to get the selector of filters
 					////////////////////////////////////////////////////////
 					
 					////////////////////////////////////////////////////////
@@ -255,7 +256,9 @@
 	</div>
 	<!--<div style="clear:both;"></div>-->
 	<!--Post bootstrap-->
-	<div id="title"><h2>JRML Volume 13</h2>
+	<div id="title"><h2>JMLR Workshop and Conference Proceedings</h2>
+        <p><b>Volume 28 : Proceedings of The 30th International Conference on Machine Learning</b></p>
+        <i>Editors: Sanjoy Dasgupta and David McAllester</i>
 	</div>
 	<div id="tablecontainer">
 		<h3>List of papers</h3>
