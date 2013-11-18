@@ -6,7 +6,7 @@ document.write("<div class=\"navbar navbar-inverse navbar-fixed-top\">\
 					<span class=\"icon-bar\"></span>\
 					<span class=\"icon-bar\"></span>\
 				</button>\
-				<a class=\"brand\" href=\"#\">JMLR Volumen 15</a>\
+				<a class=\"brand\" href=\"#\">JMLR Volumen 28</a>\
 				<div class=\"nav-collapse collapse\">\
 					<ul class=\"nav\">\
 						<li class=\"active\"><a href=\"http://jmlr.org/\">Home</a></li>\
