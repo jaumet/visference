@@ -44,6 +44,54 @@
 // -> filter: 0 no eligible for filtering | 1 eligible for filtering
 // -> role: "hide" to hide the parameter in the supertable.
 
+/*
+ * Implement axes proposed by Wray!!
+Wray Buntine
+Sent:	 Friday, 29 November 2013 2:33 PM
+To:	
+Jaume Nualart
+Complexity:
+        * time
+        * space
+        * algorithmic
+
+Data:
+        * matrices
+        * representation
+        * sequential
+
+Modelling:
+        * model selection
+        * probability
+        * graphs/networks
+        * latent variables
+        * loss function/utility
+
+Algorithmics:
+        * optimisation
+        * greedy
+        * MCMC
+        * online
+
+Task:
+        * vision/image
+        * documents
+        * medical
+
+Interaction:
+        * supervised
+        * feedback
+
+Theory:
+        * proofs
+        * information theory
+        * complexity
+ * 
+ * 
+ * */
+
+
+
 var FIELDS = [
 	{
 		"id": 
