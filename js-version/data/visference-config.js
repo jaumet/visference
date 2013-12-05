@@ -114,56 +114,76 @@ var FIELDS = [
 			{ human: "Images and Neural Network", areafilter: "1", role:"table-area"},
 		"topic5": 
 			{ human: "Experiments", areafilter: "1", role:"table-area"},
-                "topic6": 
+        "topic6": 
 			{ human: "Definitions", areafilter: "1", role:"table-area"},
-                "topic7": 
+        "topic7": 
 			{ human: "Optimisation", areafilter: "1", role:"table-area"},
-                "topic8": 
+        "topic8": 
 			{ human: "Probabilistic Models", areafilter: "1", role:"table-area"},
-                "topic9": 
+        "topic9": 
 			{ human: "Discussion", areafilter: "1", role:"table-area"},
-                "topic10": 
+        "topic10": 
 			{ human: "Topic and Latent Variable Models", areafilter: "1", role:"table-area"},
 		"axis1": 
-			{ human: "My axis 1", areafilter: "1", role:"category-area"},
+			{ human: "Complexity", areafilter: "1", role:"category-area"},
 		"a1": 
-			{ human: "My A1", areafilter: "0", role:"subcategory"},
+			{ human: "Time", areafilter: "0", role:"subcategory"},
 		"a2": 
-			{ human: "My A2", areafilter: "0", role:"subcategory"},
+			{ human: "Space", areafilter: "0", role:"subcategory"},
+		"a3": 
+			{ human: "Algorithmic", areafilter: "0", role:"subcategory"},
 		"axis2": 
-			{ human: "My axis 2", areafilter: "1", role:"category-area"},
+			{ human: "Data", areafilter: "1", role:"category-area"},
 		"b1": 
-			{ human: "My B1", areafilter: "0", role:"subcategory"},
+			{ human: "Matrices", areafilter: "0", role:"subcategory"},
 		"b2": 
-			{ human: "My B2", areafilter: "0", role:"subcategory"},
+			{ human: "Reresentation", areafilter: "0", role:"subcategory"},
 		"b3": 
-			{ human: "My B3", areafilter: "0", role:"subcategory"},
+			{ human: "Sequential", areafilter: "0", role:"subcategory"},
 		"axis3": 
-			{ human: "My axis 3", areafilter: "1", role:"category-area"},
+			{ human: "Modelling", areafilter: "1", role:"category-area"},
 		"c1": 
-			{ human: "My C1", areafilter: "0", role:"subcategory"},
+			{ human: "Model selection", areafilter: "0", role:"subcategory"},
 		"c2": 
-			{ human: "My C2", areafilter: "0", role:"subcategory"},
+			{ human: "Probability", areafilter: "0", role:"subcategory"},
+		"c3": 
+			{ human: "Graphs/networks", areafilter: "0", role:"subcategory"},
+		"c4": 
+			{ human: "Latent variables", areafilter: "0", role:"subcategory"},
+		"c5": 
+			{ human: "Loss function/utility", areafilter: "0", role:"subcategory"},
 		"axis4": 
-			{ human: "My axis 4", areafilter: "1", role:"category-area"},
+			{ human: "Algorithmics", areafilter: "1", role:"category-area"},
 		"d1": 
-			{ human: "My D1", areafilter: "0", role:"subcategory"},
+			{ human: "Optimisation", areafilter: "0", role:"subcategory"},
 		"d2": 
-			{ human: "My D2", areafilter: "0", role:"subcategory"},
+			{ human: "Greedy", areafilter: "0", role:"subcategory"},
 		"d3": 
-			{ human: "My D3", areafilter: "0", role:"subcategory"},
+			{ human: "MCMC", areafilter: "0", role:"subcategory"},
+		"d4": 
+			{ human: "Online", areafilter: "0", role:"subcategory"},
 		"axis5": 
-			{ human: "My axis 5", areafilter: "1", role:"category-area"},
+			{ human: "Task", areafilter: "1", role:"category-area"},
 		"e1": 
-			{ human: "My E1", areafilter: "0", role:"subcategory"},
+			{ human: "Vision/image", areafilter: "0", role:"subcategory"},
 		"e2": 
-			{ human: "My E2", areafilter: "0", role:"subcategory"},
+			{ human: "Documents", areafilter: "0", role:"subcategory"},
 		"e3": 
-			{ human: "My E3", areafilter: "0", role:"subcategory"},
-		"e4": 
-			{ human: "My E4", areafilter: "0", role:"subcategory"},
-		"e5": 
-			{ human: "My E5", areafilter: "0", role:"subcategory"}
+			{ human: "Medical", areafilter: "0", role:"subcategory"},
+		"axis6": 
+			{ human: "Interaction", areafilter: "1", role:"category-area"},			
+		"f1": 
+			{ human: "Supervised", areafilter: "0", role:"subcategory"},
+		"f2": 
+			{ human: "Feedback", areafilter: "0", role:"subcategory"},
+		"axis7": 
+			{ human: "Theory", areafilter: "1", role:"category-area"},
+		"g1": 
+			{ human: "Proofs", areafilter: "0", role:"subcategory"},
+		"g2": 
+			{ human: "Information theory", areafilter: "0", role:"subcategory"},
+		"g3": 
+			{ human: "Complexity", areafilter: "0", role:"subcategory"}
 	}
 ];
 
@@ -208,9 +228,24 @@ var SUPERLIST_CATEGORIES = [
 			[
 				{"code": "e1"},
 				{"code": "e2"},
-				{"code": "e3"},
-				{"code": "e4"},
-				{"code": "e5"}
+				{"code": "e3"}
+			]
+	},
+	{
+	"axisname":"axis6",
+		   "values" : 
+			[
+				{"code": "f1"},
+				{"code": "f2"}
+			]
+	},
+	{
+	"axisname":"axis7",
+                   "values" : 
+			[
+				{"code": "g1"},
+				{"code": "g2"},
+				{"code": "g3"}
 			]
 	}
 ];
