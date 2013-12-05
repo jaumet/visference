@@ -28,7 +28,7 @@
 ///////////////////////////////////////////////////////////////////
 // AREA CONFIGURATION
 //
-	var MAX_DISTINC = 200;
+	var MAX_DISTINC = 20;
 	var AREAX = 800;
 	var AREAY = 600;
 	var COLORS_APPROACH = "gradient"; // fix, random, gradient
@@ -43,54 +43,6 @@
 // -> human : human name for the field
 // -> filter: 0 no eligible for filtering | 1 eligible for filtering
 // -> role: "hide" to hide the parameter in the supertable.
-
-/*
- * Implement axes proposed by Wray!!
-Wray Buntine
-Sent:	 Friday, 29 November 2013 2:33 PM
-To:	
-Jaume Nualart
-Complexity:
-        * time
-        * space
-        * algorithmic
-
-Data:
-        * matrices
-        * representation
-        * sequential
-
-Modelling:
-        * model selection
-        * probability
-        * graphs/networks
-        * latent variables
-        * loss function/utility
-
-Algorithmics:
-        * optimisation
-        * greedy
-        * MCMC
-        * online
-
-Task:
-        * vision/image
-        * documents
-        * medical
-
-Interaction:
-        * supervised
-        * feedback
-
-Theory:
-        * proofs
-        * information theory
-        * complexity
- * 
- * 
- * */
-
-
 
 var FIELDS = [
 	{
@@ -165,7 +117,7 @@ var FIELDS = [
 		"axis5": 
 			{ human: "Task", areafilter: "1", role:"category-area"},
 		"e1": 
-			{ human: "Vision/image", areafilter: "0", role:"subcategory"},
+			{ human: "Vision and image", areafilter: "0", role:"subcategory"},
 		"e2": 
 			{ human: "Documents", areafilter: "0", role:"subcategory"},
 		"e3": 
