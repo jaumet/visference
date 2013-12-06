@@ -1,6 +1,6 @@
 /////////////////////////////////
-//          VISFERENCE
-//      CONFIGURATION FILE
+//		  VISFERENCE
+//	  CONFIGURATION FILE
 //////////////////////// [Canberra, Jul-Set2013 by Jaume@Nualart.cat]
 // Visference, as it is now, are two exploration tools for a collection of items
 // First application of Visaference is for academic papers from conferences. therefor its name.
@@ -11,8 +11,8 @@
 //
 // Three variable need to be defined:
 // FIELDS -> This variable is only used by AREA. 
-//    It defines the machine name the human name and whether each paramater 
-//    is eligible for filtering.
+//	It defines the machine name the human name and whether each paramater 
+//	is eligible for filtering.
 // ROLE DEFINITIONS:
 // 		"table" -> only SuperList as a column in the table
 // 		"category" -> only SuperList as a category in left column
@@ -22,7 +22,7 @@
 // 		"category-area" -> SuperList as a category in left column + AREA parameter
 // 
 // FILTERS -> this variable is used only for Superlist.
-//    It defines the machine names for each category
+//	It defines the machine names for each category
 
 
 ///////////////////////////////////////////////////////////////////
@@ -54,11 +54,11 @@ var FIELDS = [
 			{ human: "Authors", areafilter: "1", role:"table-area"},
 		"url": 
 			{ human: "PDF<br />Abs", areafilter: "1", role:"table-area"},
-                "Identifier":
+		"Identifier":
 			{ human: "Identifier", areafilter: "1", role:"hide"},
-                "topic1":
+		"topic1":
 			{ human: "SVNs and Kernels", areafilter: "0", role:"table-area"},
-                "topic2": 
+		"topic2": 
 			{ human: "Theory", areafilter: "1", role:"table-area"},
 		"topic3": 
 			{ human: "Policies and Games", areafilter: "1", role:"table-area"},
@@ -66,15 +66,15 @@ var FIELDS = [
 			{ human: "Images and Neural Network", areafilter: "1", role:"table-area"},
 		"topic5": 
 			{ human: "Experiments", areafilter: "1", role:"table-area"},
-        "topic6": 
+		"topic6": 
 			{ human: "Definitions", areafilter: "1", role:"table-area"},
-        "topic7": 
+		"topic7": 
 			{ human: "Optimisation", areafilter: "1", role:"table-area"},
-        "topic8": 
+		"topic8": 
 			{ human: "Probabilistic Models", areafilter: "1", role:"table-area"},
-        "topic9": 
+		"topic9": 
 			{ human: "Discussion", areafilter: "1", role:"table-area"},
-        "topic10": 
+		"topic10": 
 			{ human: "Topic and Latent Variable Models", areafilter: "1", role:"table-area"},
 		"axis1": 
 			{ human: "Complexity", areafilter: "1", role:"category-area"},
@@ -142,7 +142,7 @@ var FIELDS = [
 var SUPERLIST_CATEGORIES = [
 	{
 	"axisname":"axis1",
-		   "values" : 
+			"values" : 
 			[
 				{"code": "a1"},
 				{"code": "a2"}
@@ -150,7 +150,7 @@ var SUPERLIST_CATEGORIES = [
 	},
 	{
 	"axisname":"axis2",
-		   "values" : 
+			"values" : 
 			[
 				{"code": "b1"},
 				{"code": "b2"},
@@ -159,15 +159,15 @@ var SUPERLIST_CATEGORIES = [
 	},
 	{
 	"axisname":"axis3",
-		   "values" : 
+			"values" : 
 			[
 				{"code": "c1"},
 				{"code": "c2"}
-	   		]
+				]
 	},
 	{
 	"axisname":"axis4",
-                   "values" : 
+			"values" : 
 			[
 				{"code": "d1"},
 				{"code": "d2"},
@@ -176,7 +176,7 @@ var SUPERLIST_CATEGORIES = [
 	},
 	{
 	"axisname":"axis5",
-		   "values" : 
+			"values" : 
 			[
 				{"code": "e1"},
 				{"code": "e2"},
@@ -185,7 +185,7 @@ var SUPERLIST_CATEGORIES = [
 	},
 	{
 	"axisname":"axis6",
-		   "values" : 
+			"values" : 
 			[
 				{"code": "f1"},
 				{"code": "f2"}
@@ -193,7 +193,7 @@ var SUPERLIST_CATEGORIES = [
 	},
 	{
 	"axisname":"axis7",
-                   "values" : 
+			"values" : 
 			[
 				{"code": "g1"},
 				{"code": "g2"},

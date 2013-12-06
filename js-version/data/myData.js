@@ -18,7 +18,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':2,
@@ -39,7 +40,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':3,
@@ -60,6 +62,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e1",
 		"axis6": "f1"
 	},
 	{
@@ -81,6 +84,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -102,7 +106,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':6,
@@ -123,7 +128,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':7,
@@ -144,6 +150,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -165,7 +172,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':9,
@@ -186,6 +194,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -207,7 +216,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':11,
@@ -228,7 +238,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':12,
@@ -249,6 +260,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -270,7 +282,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':14,
@@ -291,7 +304,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':15,
@@ -312,6 +326,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -333,7 +348,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':17,
@@ -354,6 +370,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -375,7 +392,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':19,
@@ -396,7 +414,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':20,
@@ -417,7 +436,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':21,
@@ -438,7 +458,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':22,
@@ -459,6 +480,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -480,6 +502,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -501,6 +524,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -522,6 +546,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -543,6 +568,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -564,7 +590,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':28,
@@ -585,7 +612,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':29,
@@ -606,6 +634,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -627,6 +656,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -648,7 +678,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':32,
@@ -669,6 +700,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -690,7 +722,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':34,
@@ -711,6 +744,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -732,7 +766,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':36,
@@ -753,6 +788,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -774,7 +810,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':38,
@@ -795,7 +832,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':39,
@@ -816,7 +854,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':40,
@@ -837,7 +876,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':41,
@@ -858,7 +898,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':42,
@@ -879,7 +920,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':43,
@@ -900,7 +942,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':44,
@@ -921,7 +964,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':45,
@@ -942,6 +986,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -963,6 +1008,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -984,6 +1030,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -1005,7 +1052,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':49,
@@ -1026,6 +1074,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -1047,7 +1096,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':51,
@@ -1068,6 +1118,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -1089,7 +1140,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':53,
@@ -1110,7 +1162,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':54,
@@ -1131,7 +1184,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':55,
@@ -1152,6 +1206,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -1173,6 +1228,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -1194,6 +1250,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -1215,6 +1272,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -1236,7 +1294,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':60,
@@ -1257,7 +1316,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':61,
@@ -1278,7 +1338,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':62,
@@ -1299,6 +1360,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -1320,7 +1382,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':64,
@@ -1341,7 +1404,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':65,
@@ -1362,6 +1426,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -1383,6 +1448,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -1404,7 +1470,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':68,
@@ -1425,7 +1492,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':69,
@@ -1446,6 +1514,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -1467,7 +1536,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':71,
@@ -1488,7 +1558,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':72,
@@ -1509,7 +1580,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':73,
@@ -1530,6 +1602,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -1551,7 +1624,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':75,
@@ -1572,6 +1646,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -1593,6 +1668,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -1614,7 +1690,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':78,
@@ -1635,7 +1712,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':79,
@@ -1656,7 +1734,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':80,
@@ -1677,6 +1756,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -1698,7 +1778,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':82,
@@ -1719,7 +1800,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':83,
@@ -1740,7 +1822,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':84,
@@ -1761,7 +1844,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':85,
@@ -1782,7 +1866,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':86,
@@ -1803,7 +1888,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':87,
@@ -1824,7 +1910,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':88,
@@ -1845,7 +1932,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':89,
@@ -1866,7 +1954,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':90,
@@ -1887,6 +1976,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -1908,7 +1998,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':92,
@@ -1929,7 +2020,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':93,
@@ -1950,7 +2042,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':94,
@@ -1971,6 +2064,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -1992,7 +2086,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':96,
@@ -2013,6 +2108,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -2034,7 +2130,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':98,
@@ -2055,6 +2152,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -2076,6 +2174,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -2097,7 +2196,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':101,
@@ -2118,7 +2218,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':102,
@@ -2139,7 +2240,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':103,
@@ -2160,7 +2262,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':104,
@@ -2181,7 +2284,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':105,
@@ -2202,7 +2306,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':106,
@@ -2223,6 +2328,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -2244,7 +2350,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':108,
@@ -2265,7 +2372,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':109,
@@ -2286,7 +2394,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':110,
@@ -2307,7 +2416,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':111,
@@ -2328,6 +2438,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -2349,7 +2460,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':113,
@@ -2370,7 +2482,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':114,
@@ -2391,7 +2504,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':115,
@@ -2412,6 +2526,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -2433,7 +2548,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':117,
@@ -2454,7 +2570,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':118,
@@ -2475,6 +2592,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -2496,6 +2614,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -2517,6 +2636,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -2538,7 +2658,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':122,
@@ -2559,6 +2680,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -2580,7 +2702,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':124,
@@ -2601,6 +2724,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -2622,7 +2746,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':126,
@@ -2643,7 +2768,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':127,
@@ -2664,7 +2790,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':128,
@@ -2685,7 +2812,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':129,
@@ -2706,6 +2834,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -2727,7 +2856,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':131,
@@ -2748,7 +2878,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':132,
@@ -2769,6 +2900,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -2790,6 +2922,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -2811,7 +2944,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':135,
@@ -2832,7 +2966,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':136,
@@ -2853,6 +2988,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -2874,7 +3010,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':138,
@@ -2895,6 +3032,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -2916,6 +3054,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -2937,7 +3076,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':141,
@@ -2958,7 +3098,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':142,
@@ -2979,7 +3120,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':143,
@@ -3000,7 +3142,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':144,
@@ -3021,6 +3164,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -3042,6 +3186,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -3063,7 +3208,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':147,
@@ -3084,7 +3230,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':148,
@@ -3105,6 +3252,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -3126,7 +3274,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':150,
@@ -3147,6 +3296,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -3168,6 +3318,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -3189,7 +3340,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':153,
@@ -3210,6 +3362,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -3231,7 +3384,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':155,
@@ -3252,7 +3406,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':156,
@@ -3273,7 +3428,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':157,
@@ -3294,7 +3450,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':158,
@@ -3315,7 +3472,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':159,
@@ -3336,7 +3494,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':160,
@@ -3357,7 +3516,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':161,
@@ -3378,6 +3538,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -3399,7 +3560,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':163,
@@ -3420,6 +3582,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -3441,6 +3604,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -3462,6 +3626,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -3483,7 +3648,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':167,
@@ -3504,7 +3670,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':168,
@@ -3525,6 +3692,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -3546,6 +3714,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -3567,7 +3736,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':171,
@@ -3588,7 +3758,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':172,
@@ -3609,7 +3780,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':173,
@@ -3630,6 +3802,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -3651,7 +3824,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':175,
@@ -3672,6 +3846,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -3693,7 +3868,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':177,
@@ -3714,7 +3890,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':178,
@@ -3735,6 +3912,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -3756,6 +3934,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -3777,7 +3956,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':181,
@@ -3798,7 +3978,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':182,
@@ -3819,6 +4000,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -3840,6 +4022,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -3861,6 +4044,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -3882,7 +4066,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':186,
@@ -3903,7 +4088,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':187,
@@ -3924,7 +4110,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':188,
@@ -3945,6 +4132,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -3966,6 +4154,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -3987,7 +4176,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':191,
@@ -4008,7 +4198,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':192,
@@ -4029,6 +4220,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -4050,7 +4242,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':194,
@@ -4071,6 +4264,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -4092,7 +4286,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':196,
@@ -4113,6 +4308,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -4134,7 +4330,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':198,
@@ -4155,7 +4352,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':199,
@@ -4176,7 +4374,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':200,
@@ -4197,7 +4396,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':201,
@@ -4218,7 +4418,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':202,
@@ -4239,7 +4440,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':203,
@@ -4260,6 +4462,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -4281,6 +4484,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -4302,7 +4506,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':206,
@@ -4323,7 +4528,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':207,
@@ -4344,7 +4550,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':208,
@@ -4365,7 +4572,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':209,
@@ -4386,7 +4594,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':210,
@@ -4407,7 +4616,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':211,
@@ -4428,7 +4638,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':212,
@@ -4449,7 +4660,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':213,
@@ -4470,7 +4682,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':214,
@@ -4491,6 +4704,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -4512,7 +4726,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':216,
@@ -4533,6 +4748,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -4554,6 +4770,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -4575,6 +4792,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -4596,7 +4814,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':220,
@@ -4617,6 +4836,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -4638,7 +4858,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':222,
@@ -4659,7 +4880,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':223,
@@ -4680,6 +4902,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -4701,6 +4924,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -4722,7 +4946,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':226,
@@ -4743,6 +4968,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -4764,7 +4990,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':228,
@@ -4785,6 +5012,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -4806,7 +5034,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':230,
@@ -4827,6 +5056,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -4848,7 +5078,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':232,
@@ -4869,6 +5100,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -4890,7 +5122,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':234,
@@ -4911,7 +5144,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':235,
@@ -4932,7 +5166,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':236,
@@ -4953,7 +5188,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':237,
@@ -4974,6 +5210,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f1"
 	},
 	{
@@ -4995,6 +5232,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5016,6 +5254,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5037,7 +5276,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':241,
@@ -5058,6 +5298,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5079,6 +5320,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5100,6 +5342,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -5121,7 +5364,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':245,
@@ -5142,6 +5386,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -5163,7 +5408,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':247,
@@ -5184,6 +5430,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -5205,6 +5452,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5226,7 +5474,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':250,
@@ -5247,6 +5496,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5268,7 +5518,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':252,
@@ -5289,6 +5540,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5310,7 +5562,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':254,
@@ -5331,7 +5584,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':255,
@@ -5352,6 +5606,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5373,6 +5628,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d1",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -5394,7 +5650,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':258,
@@ -5415,7 +5672,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':259,
@@ -5436,6 +5694,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -5457,6 +5716,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5478,7 +5738,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':262,
@@ -5499,7 +5760,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':263,
@@ -5520,6 +5782,7 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d2",
+		"axis5": "e3",
 		"axis6": "f1"
 	},
 	{
@@ -5541,7 +5804,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':265,
@@ -5562,7 +5826,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':266,
@@ -5583,7 +5848,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':267,
@@ -5604,7 +5870,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':268,
@@ -5625,7 +5892,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':269,
@@ -5646,7 +5914,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':270,
@@ -5667,7 +5936,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':271,
@@ -5688,7 +5958,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':272,
@@ -5709,6 +5980,7 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d3",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5730,7 +6002,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':274,
@@ -5751,6 +6024,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
+		"axis5": "e2",
 		"axis6": "f2"
 	},
 	{
@@ -5772,7 +6046,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':276,
@@ -5793,7 +6068,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':277,
@@ -5814,7 +6090,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c1",
 		"axis4": "d1",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':278,
@@ -5835,7 +6112,8 @@ var DATA = [
 		"axis2": "b3",
 		"axis3": "c2",
 		"axis4": "d3",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':279,
@@ -5856,7 +6134,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c2",
 		"axis4": "d1",
-		"axis5": "e2"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':280,
@@ -5877,7 +6156,8 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d3",
-		"axis5": "e3"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':281,
@@ -5898,7 +6178,8 @@ var DATA = [
 		"axis2": "b1",
 		"axis3": "c2",
 		"axis4": "d2",
-		"axis5": "e1"
+		"axis5": "e2",
+		"axis6": "f1"
 	},
 	{
 		'id':282,
@@ -5919,6 +6200,7 @@ var DATA = [
 		"axis2": "b2",
 		"axis3": "c1",
 		"axis4": "d2",
-		"axis5": "e1"
-	}
+		"axis5": "e1",
+		"axis6": "f1"
+	},
 ];

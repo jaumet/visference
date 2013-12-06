@@ -296,7 +296,7 @@
 			var legend2 = "";
 			$.each(distinc2, function(i, el) {
 				param2colors[el] = colors[i];
-				legend2 += '<span class="legendtxt" style="background-color:'+colors[i]+';">'+el+'</span>&nbsp;';
+				legend2 += '<span class="legendtxt" style="background-color:'+colors[i]+';">'+getHumanName(FIELDS[0], el)+'</span>&nbsp;';
 			});
 			// Adding legend of param2
 			$('#legend2').append(legend2);
@@ -321,10 +321,13 @@
 			$('#area').css("width", AREAX+2+(2*dim_blocks)+"px"); // FIXME check this width correction
 			var legend1 = ""; 
 			$.each(distinc1, function(i, param1_val) {
-				// Getting legent of param1
-				legend1 += '<span class="legendtxt">'+param1_val+'</span>&nbsp;';
-				$('#area').append('<div id="b-'+param1_val+'" class="block"><div class="blockname">'+param1_val+'</div></div>');
-				block_builder(DATA, blockx, blocky, param1_val, param2colors, FILTER, selected);
+				// Getting legend of param1
+				if (getHumanName(FIELDS[0], param1_val) !== 'undefined') {
+					console.log("param1_val: "+param1_val+" | ");
+					legend1 += '<span class="legendtxt">'+getHumanName(FIELDS[0], param1_val)+'</span>&nbsp;';
+					$('#area').append('<div id="b-'+param1_val+'" class="block"><div class="blockname">'+getHumanName(FIELDS[0], param1_val)+'</div></div>');
+					block_builder(DATA, blockx, blocky, param1_val, param2colors, FILTER, selected);
+				}
 			});
 			// Adding legend of param1
 			$('#legend1').append(legend1);

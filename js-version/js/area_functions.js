@@ -39,6 +39,18 @@ function distinc(data, param) {
 	return singles;
 }
 
+// Get human name of a FIELD
+function getHumanName(myFields, fieldName) {
+	var name = '';
+	console.log("fieldName===> "+fieldName);
+	if (!fieldName) {
+		name = "XXX";
+	} else {
+		name = myFields[fieldName]['human'];
+	}
+	return name;
+} 
+
 // Count values of an object
 function countValues(values, column, search) {
 	var total = 0;
