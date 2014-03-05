@@ -43,10 +43,10 @@ function distinc(data, param) {
 function getHumanName(myFields, fieldName) {
 	var name = '';
 	console.log("fieldName===> "+fieldName);
-	if (!fieldName) {
-		name = "XXX";
-	} else {
+	if (fieldName in myFields) {
 		name = myFields[fieldName]['human'];
+	} else {
+		name = fieldName;
 	}
 	return name;
 } 
